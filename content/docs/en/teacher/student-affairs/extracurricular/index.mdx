@@ -1,0 +1,76 @@
+---
+title: Extracurricular
+description: Extracurricular Module Guide for eSchool Coaches
+icon: Trophy
+---
+
+Welcome to the **Extracurricular** module. As a Coach, you have access to manage activity schedules, approve new member registrations, record daily attendance, and view recapitulation reports for the activities you lead.
+
+## Guide List
+
+Select one of the guides below to start managing:
+
+import { Cards, Card } from 'fumadocs-ui/components/card';
+import { Calendar, Users, CheckSquare, BarChart3, ChevronRight } from 'lucide-react';
+
+<Cards>
+  <Card
+    title={
+      <div className="flex items-center justify-between w-full">
+        <div className="flex items-center gap-2">
+          <Calendar className="h-5 w-5 text-fd-primary" />
+          <span>Activity Schedule</span>
+        </div>
+        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
+      </div>
+    }
+    href="./teacher-extracurricular-schedule"
+  />
+  <Card
+    title={
+      <div className="flex items-center justify-between w-full">
+        <div className="flex items-center gap-2">
+          <Users className="h-5 w-5 text-fd-primary" />
+          <span>Member List</span>
+        </div>
+        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
+      </div>
+    }
+    href="./teacher-extracurricular-members"
+  />
+  <Card
+    title={
+      <div className="flex items-center justify-between w-full">
+        <div className="flex items-center gap-2">
+          <CheckSquare className="h-5 w-5 text-fd-primary" />
+          <span>Input Attendance</span>
+        </div>
+        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
+      </div>
+    }
+    href="./teacher-extracurricular-attendance"
+  />
+  <Card
+    title={
+      <div className="flex items-center justify-between w-full">
+        <div className="flex items-center gap-2">
+          <BarChart3 className="h-5 w-5 text-fd-primary" />
+          <span>Reports & Recap</span>
+        </div>
+        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
+      </div>
+    }
+    href="./teacher-extracurricular-attendance-report"
+  />
+</Cards>
+
+---
+
+## Coach Workflow
+
+To carry out your duties as a coach effectively, follow this workflow:
+
+1. **Manage Schedule:** Set routine days and meeting times in the [Activity Schedule](./teacher-extracurricular-schedule) menu.
+2. **Member Approval:** Check and fulfill student registration requests in the [Member List](./teacher-extracurricular-members) menu.
+3. **Record Attendance:** Always fill in the attendance list every time a meeting is finished in the [Input Attendance](./teacher-extracurricular-attendance) menu.
+4. **Monitoring:** Evaluate your students' activity in the [Reports & Recap](./teacher-extracurricular-attendance-report) menu.

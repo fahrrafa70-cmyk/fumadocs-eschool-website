@@ -1,0 +1,11 @@
+{
+    "title": "Extracurricular",
+    "icon": "Trophy",
+    "pages": [
+        "index",
+        "teacher-extracurricular-schedule",
+        "teacher-extracurricular-members",
+        "teacher-extracurricular-attendance",
+        "teacher-extracurricular-attendance-report"
+    ]
+}

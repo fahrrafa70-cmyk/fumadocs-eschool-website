@@ -1,0 +1,102 @@
+---
+title: Daftar Anggota Ekstrakurikuler
+description: Panduan bagi Guru Pembina untuk mengelola pendaftaran siswa, proses approval, dan database anggota kegiatan
+icon: Users
+---
+
+<img src="/images/anggota-eskul-guru.png" alt="Tambah Ekstrakurikuler"  />
+
+Halaman **Anggota (Members)** adalah pusat kendali bagi Anda sebagai Guru Pembina untuk menentukan siapa saja siswa yang berhak bergabung dalam kegiatan yang Anda bina. Sebagai pembina, Anda memiliki tanggung jawab penuh untuk meninjau, menyetujui, atau menolak pendaftaran siswa yang masuk melalui aplikasi mobile.
+
+> [!NOTE]
+> Sebagai Guru Pembina, Anda hanya bertanggung jawab atas anggota pada ekstrakurikuler yang Anda bina. Anda tidak dapat melihat atau memproses pendaftaran untuk kegiatan lain yang dipimpin oleh rekan guru lainnya.
+
+---
+
+## Alur Pendaftaran & Approval
+
+Proses perekrutan anggota baru di eSchool mengikuti alur kerja digital yang efisien:
+
+1. **Pendaftaran:** Siswa memilih ekstrakurikuler Anda di aplikasi mobile mereka dan mengklik tombol "Daftar".
+2. **Review:** Data siswa masuk ke sistem dashboard Guru dengan status **Pending**.
+3. **Keputusan:** Anda meninjau identitas siswa dan memutuskan untuk menyetujui (*Approve*) atau menolak (*Reject*).
+4. **Notifikasi:** Siswa menerima notifikasi otomatis di ponsel mereka mengenai status pendaftaran tersebut.
+
+### Memahami Status Anggota
+
+Kenali label status yang muncul pada tabel anggota Anda:
+
+- 🟡 **Pending:** Siswa baru saja mendaftar dan menunggu persetujuan Anda.
+- 🟢 **Approved:** Siswa resmi menjadi anggota. Hanya siswa dengan status ini yang akan muncul di daftar absensi pertemuan.
+- 🔴 **Rejected:** Siswa ditolak bergabung (mungkin karena kuota penuh atau tidak memenuhi kriteria).
+
+---
+
+## Mengelola Anggota
+
+Halaman Anggota dilengkapi dengan fitur pencarian dan filter untuk memudahkan Anda mengelola banyak siswa sekaligus.
+
+### 1. Filter & Pencarian Anggota
+Anda dapat mempersempit daftar yang tampil menggunakan:
+- **Pilih Ekstrakurikuler:** (Jika Anda membina lebih dari satu kegiatan).
+- **Grade Level:** Filter siswa berdasarkan tingkat kelas (misal: hanya kelas 10).
+- **Status:** Filter berdasarkan Pending, Approved, atau Rejected.
+- **Kolom Pencarian:** Cari siswa spesifik menggunakan nama lengkap atau NISN.
+
+### 2. Menyetujui Pendaftar (Approve)
+
+**A. Cara Individual (Satu per satu):**
+- Temukan baris nama siswa dengan status Pending.
+- Klik tombol **Centang (✓)** di kolom aksi.
+- Klik "Ya" pada jendela konfirmasi yang muncul.
+
+**B. Cara Massal (Bulk Approve):**
+Gunakan fitur ini jika ada banyak pendaftar sekaligus di awal semester:
+- Centang kotak di sebelah kiri nama-nama siswa yang ingin Anda setujui.
+- Klik tombol biru **Approve Selected Members** yang muncul di atas tabel.
+- Seluruh siswa yang Anda pilih akan disetujui dalam satu kali klik. ⚡
+
+### 3. Menolak Pendaftar (Reject)
+Jika pendaftaran tidak sesuai atau kuota sudah terpenuhi:
+- Klik tombol **Silang (✗)** merah pada baris siswa terkait.
+- Setelah ditolak, siswa tersebut tidak akan dapat mengikuti absensi kegiatan.
+
+---
+
+## Melihat Detail Siswa
+
+<img src="/images/detail-anggota-eskul.png" alt="Tambah Ekstrakurikuler"  />
+
+Sebelum memberikan persetujuan, Anda dapat melihat profil lengkap siswa dengan cara mengklik pada baris nama siswa tersebut. Sebuah jendela (*modal*) akan muncul menampilkan:
+- Foto profil siswa.
+- NISN dan Kelas.
+- Tanggal siswa tersebut mengajukan pendaftaran.
+- Tombol aksi cepat (Approve/Reject) di bagian bawah jendela detail.
+
+---
+
+## Export Data Anggota
+
+Jika Anda memerlukan daftar nama anggota dalam bentuk fisik atau file Excel untuk kebutuhan laporan ke pihak kurikulum atau kesiswaan:
+1. Klik tombol **Export**.
+2. Pilih format file yang diinginkan (misal: **Excel**).
+3. File akan otomatis terunduh dengan format nama: `rekap-anggota-[nama-eskul]-[tanggal].xlsx`.
+
+---
+
+## Best Practices untuk Guru Pembina
+
+- ✅ **Cek Rutin:** Lakukan pengecekan pendaftaran baru minimal 2 hari sekali agar siswa tidak menunggu terlalu lama tanpa kepastian.
+- ✅ **Komunikasi Kuota:** Jika kuota kegiatan Anda terbatas, segera ubah status menjadi `Rejected` bagi pendaftar yang tidak masuk kriteria agar mereka bisa segera mendaftar di kegiatan lain yang masih tersedia.
+- ✅ **Validasi Kelas:** Pastikan siswa yang mendaftar benar-benar berasal dari tingkat kelas yang diperbolehkan untuk mengikuti kegiatan tersebut.
+- ✅ **Apresiasi:** Gunakan daftar ini untuk memantau perkembangan siswa secara berkala dan berikan apresiasi bagi mereka yang paling awal bergabung dengan antusias.
+
+---
+
+## Troubleshooting
+
+- **Siswa Mengaku Sudah Daftar tapi Tidak Muncul?**
+  Pastikan Anda tidak sedang mengaktifkan filter yang salah (misal: filter kelas yang berbeda). Mintalah siswa untuk memastikan pendaftaran mereka sudah berhasil di sisi aplikasi mobile.
+  
+- **Tombol Approve Tidak Bisa Diklik?**
+  Pastikan koneksi internet Anda stabil. Jika tetap tidak bisa, hubungi Admin Sekolah untuk memastikan hak akses (*permission*) akun Anda sebagai pembina sudah dikonfigurasi dengan benar.

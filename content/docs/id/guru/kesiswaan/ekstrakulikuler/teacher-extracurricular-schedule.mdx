@@ -1,0 +1,92 @@
+---
+title: Jadwal Ekstrakurikuler
+description: Panduan pengelolaan jadwal pertemuan, hari, dan durasi kegiatan bagi Guru Pembina di eSchool
+icon: Calendar
+---
+
+
+
+Sebagai **Guru Pembina (Coach)**, salah satu tanggung jawab utama Anda adalah memastikan jadwal kegiatan terdokumentasi dengan baik di sistem eSchool. Jadwal yang akurat sangat penting karena menjadi dasar bagi sistem absensi dan notifikasi otomatis ke aplikasi mobile siswa.
+
+> [!IMPORTANT]
+> Sebagai Guru Pembina, Anda hanya dapat melihat dan mengelola jadwal untuk ekstrakurikuler di mana Anda ditunjuk sebagai pembina (coach). Jika modul ini kosong, pastikan Admin Sekolah telah menetapkan Anda sebagai pembina pada ekstrakurikuler tersebut.
+
+## Mengakses Halaman Jadwal
+
+Untuk mulai mengelola agenda kegiatan, ikuti langkah berikut:
+
+1. Buka **Sidebar** di dashboard Guru.
+2. Pilih menu **Kesiswaan** → **Ekstrakulikuler**.
+3. Klik sub-menu **Jadwal Ekstrakurikuler**.
+
+Pada halaman ini, Anda akan melihat daftar jadwal yang sudah aktif atau form untuk menambahkan jadwal baru jika Anda baru saja memulai periode pembinaan.
+
+---
+
+## Membuat Jadwal Baru
+
+Satu ekstrakurikuler dapat memiliki lebih dari satu jadwal pertemuan dalam seminggu (misalnya latihan rutin dua kali seminggu).
+
+<img src="/images/jadwal-eskul-guru.png" alt="Tambah Ekstrakurikuler"  />
+
+### Langkah-langkah Input:
+
+1. **Pilih Ekstrakurikuler**
+   - Klik dropdown pada kolom Ekstrakurikuler.
+   - Sistem hanya akan menampilkan nama kegiatan yang Anda bina.
+
+2. **Tentukan Hari & Waktu**
+   - **Hari:** Pilih hari pertemuan (Senin - Minggu).
+   - **Waktu Mulai:** Masukkan jam mulai (format 24 jam, misal: `15:30`).
+   - **Waktu Selesai:** Masukkan jam berakhir (misal: `17:00`).
+
+3. **Simpan Jadwal**
+   - Klik tombol **Simpan Jadwal**.
+   - Data akan tersimpan dan langsung sinkron ke kalender aplikasi mobile siswa.
+
+> [!TIP]
+> **Validasi Sistem:** Pastikan Waktu Selesai selalu lebih besar dari Waktu Mulai. Jika terbalik, sistem akan menampilkan peringatan error.
+
+---
+
+## Melihat & Mengelola Jadwal
+
+Semua jadwal yang telah Anda buat akan tampil dalam tabel ringkasan. Sebagai pembina, Anda memiliki kendali penuh untuk memperbarui atau menghapus jadwal tersebut.
+
+### Mengedit Jadwal
+Jika terjadi perubahan kebijakan sekolah atau pergeseran jam latihan:
+1. Cari baris jadwal yang ingin diubah pada tabel.
+2. Klik ikon **Edit** (ikon pensil kuning).
+3. Ubah hari atau jam pada modal yang muncul.
+4. Klik **Update** untuk menyimpan perubahan.
+
+### Menghapus Jadwal
+- **Hapus Tunggal:** Klik ikon tempat sampah merah pada baris jadwal tertentu untuk menghapus satu sesi (misal: menghapus jadwal hari Selasa saja).
+- **Reset Semua:** Gunakan tombol **Reset Semua Jadwal** untuk mengosongkan seluruh agenda pada ekstrakurikuler tersebut jika terjadi perubahan total (misal: pergantian semester).
+
+> [!WARNING]
+> Tindakan **Reset Semua Jadwal** akan menghapus **SEMUA** sesi latihan yang terdaftar. Namun, data absensi yang sudah terjadi di masa lalu tetap tersimpan dengan aman di database.
+
+---
+
+## Best Practices untuk Guru Pembina
+
+Untuk menjaga efektivitas kegiatan, pertimbangkan hal-hal berikut:
+
+- **Konsistensi:** Usahakan jadwal tetap konsisten sepanjang semester untuk memudahkan siswa mengatur waktu belajar mereka.
+- **Durasi Ideal:** Durasi kegiatan yang efektif biasanya berkisar antara 90 hingga 120 menit.
+- **Koordinasi:** Jika Anda berencana mengadakan latihan tambahan (insidental), sebaiknya input sebagai jadwal baru agar absensinya dapat dicatat secara resmi di sistem.
+- **Update Real-time:** Segera perbarui jadwal di eSchool jika ada perubahan mendadak agar siswa tidak datang ke sekolah saat kegiatan dibatalkan.
+
+---
+
+## Troubleshooting
+
+- **Nama Ekstrakurikuler Tidak Muncul?**
+  Pastikan Anda telah login dengan akun yang sama dengan yang didaftarkan oleh Admin sebagai pembina. Cek menu profil untuk memastikan peran Anda.
+  
+- **Jadwal Tidak Muncul di Aplikasi Siswa?**
+  Pastikan Anda sudah menekan tombol simpan dan mencul notifikasi sukses. Coba minta siswa untuk melakukan *pull-to-refresh* pada aplikasi mereka.
+
+- **Konflik Jadwal?**
+  Sistem mengizinkan input jam yang sama antar ekstrakurikuler yang berbeda (karena lokasi latihan mungkin berbeda). Pastikan Anda telah berkoordinasi dengan pembina lain jika menggunakan fasilitas yang sama (misal: lapangan utama).

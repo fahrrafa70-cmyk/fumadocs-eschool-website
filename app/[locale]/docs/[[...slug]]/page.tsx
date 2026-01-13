@@ -40,7 +40,7 @@ export default async function Page({
         {breadcrumbSegments && (
           <div className="mb-2 flex flex-row items-center gap-1 text-xs font-bold tracking-widest text-[#8B2323] uppercase">
             {breadcrumbSegments.map((segment, idx) => (
-              <React.Fragment key={segment}>
+              <React.Fragment key={`${segment}-${idx}`}>
                 <span>{segment.replace(/-/g, " ")}</span>
                 {idx < breadcrumbSegments.length - 1 && (
                   <ChevronRight size={12} strokeWidth={3} className="opacity-70" />

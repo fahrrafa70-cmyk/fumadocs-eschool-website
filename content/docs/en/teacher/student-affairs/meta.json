@@ -3,6 +3,7 @@
     "icon": "Users",
     "pages": [
         "student",
-        "attendance"
+        "attendance",
+        "extracurricular"
     ]
 }

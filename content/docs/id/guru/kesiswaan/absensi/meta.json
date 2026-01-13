@@ -2,7 +2,7 @@
     "title": "Absensi",
     "icon": "CalendarCheck",
     "pages": [
-        "dashboard-absensi-x",
+        "dashboard-absensi",
         "absensi-kegiatan-khusus",
         "absensi-per-pelajaran",
         "surat-izin-siswa-x",

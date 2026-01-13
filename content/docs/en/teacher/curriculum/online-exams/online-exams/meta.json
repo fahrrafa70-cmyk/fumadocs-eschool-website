@@ -1,11 +1,9 @@
 {
     "pages": [
-        "index",
-        "edit-online-exam",
-        "additional-exam-settings",
         "online-exam-results",
-        "online-exam-correction",
         "online-exam-questions",
+        "edit-online-exam",
+        "online-exam-correction",
         "online-exam-status"
     ]
 }

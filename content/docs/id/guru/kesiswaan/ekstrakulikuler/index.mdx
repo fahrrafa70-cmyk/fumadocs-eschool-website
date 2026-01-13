@@ -1,0 +1,78 @@
+---
+title: Ekstrakulikuler
+description: Panduan Modul Ekstrakulikuler untuk Guru Pembina eSchool
+icon: Trophy
+---
+
+
+
+Selamat datang di modul **Ekstrakulikuler**. Sebagai Guru Pembina (Coach), Anda memiliki akses untuk mengelola jadwal kegiatan, menyetujui pendaftaran anggota baru, mencatat kehadiran harian, serta melihat laporan rekapitulasi untuk kegiatan yang Anda bina.
+
+## Daftar Panduan
+
+Pilih salah satu panduan di bawah ini untuk memulai pengelolaan:
+
+import { Cards, Card } from 'fumadocs-ui/components/card';
+import { Calendar, Users, CheckSquare, BarChart3, ChevronRight } from 'lucide-react';
+
+<Cards>
+  <Card
+    title={
+      <div className="flex items-center justify-between w-full">
+        <div className="flex items-center gap-2">
+          <Calendar className="h-5 w-5 text-fd-primary" />
+          <span>Jadwal Kegiatan</span>
+        </div>
+        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
+      </div>
+    }
+    href="./teacher-extracurricular-schedule"
+  />
+  <Card
+    title={
+      <div className="flex items-center justify-between w-full">
+        <div className="flex items-center gap-2">
+          <Users className="h-5 w-5 text-fd-primary" />
+          <span>Daftar Anggota</span>
+        </div>
+        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
+      </div>
+    }
+    href="./teacher-extracurricular-members"
+  />
+  <Card
+    title={
+      <div className="flex items-center justify-between w-full">
+        <div className="flex items-center gap-2">
+          <CheckSquare className="h-5 w-5 text-fd-primary" />
+          <span>Input Absensi</span>
+        </div>
+        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
+      </div>
+    }
+    href="./teacher-extracurricular-attendance"
+  />
+  <Card
+    title={
+      <div className="flex items-center justify-between w-full">
+        <div className="flex items-center gap-2">
+          <BarChart3 className="h-5 w-5 text-fd-primary" />
+          <span>Laporan & Rekap</span>
+        </div>
+        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
+      </div>
+    }
+    href="./teacher-extracurricular-attendance-report"
+  />
+</Cards>
+
+---
+
+## Alur Kerja Guru Pembina
+
+Untuk menjalankan tugas sebagai pembina secara efektif, ikuti alur kerja berikut:
+
+1. **Kelola Jadwal:** Tentukan hari dan jam pertemuan rutin di menu [Jadwal Kegiatan](./teacher-extracurricular-schedule).
+2. **Approval Anggota:** Periksa dan penuhi permintaan pendaftaran siswa di menu [Daftar Anggota](./teacher-extracurricular-members).
+3. **Catat Kehadiran:** Selalu isi daftar hadir setiap kali pertemuan selesai di menu [Input Absensi](./teacher-extracurricular-attendance).
+4. **Monitoring:** Evaluasi keaktifan siswa Anda di menu [Laporan & Rekap](./teacher-extracurricular-attendance-report).

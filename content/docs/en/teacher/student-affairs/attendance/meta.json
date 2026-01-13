@@ -2,7 +2,7 @@
     "title": "Attendance",
     "icon": "CalendarCheck",
     "pages": [
-        "dashboard",
+        "attendance-dashboard",
         "special-activity",
         "per-subject-attendance",
         "leave-permits",

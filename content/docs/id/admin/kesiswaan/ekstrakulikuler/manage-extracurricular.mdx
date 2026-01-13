@@ -1,0 +1,111 @@
+---
+title: Kelola Ekstrakurikuler
+description: Panduan lengkap membuat, mengedit, dan menghapus data ekstrakurikuler di eSchool untuk Admin
+---
+
+
+
+Halaman **Kelola Ekstrakurikuler** adalah pusat kendali untuk mendefinisikan seluruh kegiatan ekstrakurikuler yang tersedia di sekolah. Sebagai Admin, Anda memiliki otoritas penuh untuk mengatur daftar ini, yang nantinya akan menjadi pilihan bagi siswa saat mendaftar melalui aplikasi mobile.
+
+> [!NOTE]
+> Perbedaan akses: **Admin** dapat mengelola semua ekstrakurikuler di seluruh sekolah. Sementara **Guru Pembina (Coach)** hanya dapat melihat dan mengelola data yang spesifik ditugaskan kepada mereka.
+
+## Membuat Ekstrakurikuler Baru
+
+Langkah pertama dalam mengaktifkan fitur ini adalah mendaftarkan nama-nama kegiatan yang ada di sekolah Anda.
+
+### Langkah-langkah Pembuatan:
+
+1. **Navigasi ke Menu Management**
+   - Buka Sidebar, expand menu **Kesiswaan**.
+   - Klik sub-menu **Ekstrakurikuler** → **Kelola Ekstrakurikuler**.
+
+2. **Isi Form Registrasi**
+   Pada bagian atas halaman, lengkapi formulir berikut:
+   
+   - **Nama Ekstrakurikuler** (Wajib)
+     - Masukkan nama yang spesifik. Contoh: `Pramuka`, `Paskibra`, `Robotik`.
+     - 💡 *Tip:* Gunakan nama yang mudah dikenali oleh siswa di aplikasi mobile.
+   
+   - **Guru Pembina / Coach** (Wajib)
+     - Pilih guru yang bertanggung jawab dari menu dropdown.
+     - Hanya akun guru yang sudah terdaftar di sistem yang akan muncul di sini.
+   
+   - **Deskripsi** (Opsional)
+     - Tambahkan penjelasan mengenai visi, misi, atau kegiatan utama ekstrakurikuler tersebut.
+     - Contoh: "Melatih ketangkasan fisik dan kedisiplinan melalui baris-berbaris."
+
+3. **Simpan Data**
+   - Klik tombol **Submit** atau **Simpan**.
+   - Sistem akan memproses data via AJAX tanpa memuat ulang halaman.
+   - Jika berhasil, data baru akan langsung muncul pada tabel di bawahnya.
+
+---
+
+## Melihat & Mencari Daftar Ekstrakurikuler
+
+Semua data yang telah diinput akan tersusun rapi dalam tabel interaktif. Anda dapat memantau siapa saja guru yang membina masing-masing kegiatan.
+
+### Fitur Tabel Interaktif:
+
+- **Pencarian Cepat (Search):** Gunakan bar pencarian untuk menemukan ekstrakurikuler berdasarkan nama atau nama coach secara *real-time*.
+- **Export Data:** Anda dapat mengunduh daftar ini dalam format **Excel**, **CSV**, atau **PDF** untuk kebutuhan laporan fisik atau arsip kantor.
+- **Refresh:** Gunakan tombol ini jika Anda merasa data belum terupdate (misal setelah coach lain melakukan perubahan dari perangkat berbeda).
+- **Pengaturan Kolom:** Anda dapat menyembunyikan kolom deskripsi jika ingin tampilan tabel lebih ringkas.
+
+| Kolom | Deskripsi |
+| :--- | :--- |
+| **No** | Nomor urut otomatis. |
+| **Nama** | Nama kegiatan ekstrakurikuler. |
+| **Coach** | Guru yang bertanggung jawab (klik untuk detail guru). |
+| **Deskripsi** | Penjelasan singkat (jika diisi). |
+| **Aksi** | Tombol untuk Edit atau Hapus. |
+
+---
+
+## Mengedit Data Ekstrakurikuler
+
+Informasi seperti nama kegiatan atau penunjukkan coach bisa berubah sewaktu-waktu (misal pergantian tahun ajaran).
+
+### Cara Mengubah Data:
+
+1. Temukan baris data yang ingin diubah pada tabel.
+2. Klik tombol **Edit** (biasanya ikon pensil kuning).
+3. Modal atau form edit akan muncul. Ubah informasi yang diperlukan.
+4. Klik **Update** untuk menyimpan perubahan.
+
+> [!TIP]
+> **Best Practice:** Jika sebuah kegiatan berubah nama secara total, lebih baik buat data baru daripada mengedit data lama, agar sejarah (history) pendaftaran siswa di tahun-tahun sebelumnya tetap akurat.
+
+---
+
+## Menghapus Data (Soft Delete & Trashed)
+
+Sistem eSchool menggunakan metode *Soft Delete* untuk menjaga keamanan data Anda. Data yang dihapus tidak akan hilang permanen seketika, melainkan dipindahkan ke folder sampah (**Trash**).
+
+### 1. Menghapus Sementara (Soft Delete)
+- Klik tombol **Delete** pada baris ekstrakurikuler.
+- Konfirmasi penghapusan.
+- Data akan menghilang dari daftar aktif namun tetap ada di database.
+
+### 2. Mengakses Folder Trash
+Jika Anda salah menghapus data, Anda dapat mengembalikannya:
+- Klik tombol **View Trashed** di bagian atas tabel.
+- Anda akan melihat daftar ekstrakurikuler yang telah dihapus.
+- Klik **Restore** untuk mengaktifkan kembali.
+
+### 3. Menghapus Permanen (Force Delete)
+- Di dalam halaman **Trashed**, klik **Force Delete** pada item tertentu.
+- ⚠️ **CAUTION:** Tindakan ini tidak dapat dibatalkan. Seluruh jadwal, anggota, dan absensi terkait mungkin akan terpengaruh atau hilang. Gunakan hanya jika sudah benar-benar yakin.
+
+---
+
+## Troubleshooting & FAQ
+
+**Q: Mengapa nama guru pembina tidak muncul di daftar pilihan?**
+- ✅ Pastikan guru tersebut sudah memiliki akun aktif di sistem eSchool.
+- ✅ Pastikan guru tersebut memiliki role `Teacher`.
+
+**Q: Saya tidak bisa menghapus ekstrakurikuler tertentu.**
+- ❌ Biasanya ini terjadi karena masih ada data anggota (siswa) atau jadwal yang aktif. Bersihkan dulu data anggota di menu **Daftar Anggota** sebelum menghapus master datanya.
+

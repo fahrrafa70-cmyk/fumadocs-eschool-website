@@ -1,0 +1,90 @@
+---
+title: Jadwal Ekstrakurikuler
+description: Panduan mengatur waktu pertemuan, hari, dan durasi kegiatan ekstrakurikuler di eSchool
+---
+
+
+
+Manajamen jadwal yang baik adalah kunci kedisiplinan siswa. Halaman **Jadwal Ekstrakurikuler** memungkinkan Admin dan Coach untuk mengatur kapan tepatnya kegiatan dilakukan setiap minggunya. Informasi jadwal ini akan langsung terlihat di kalender atau dashboard aplikasi mobile masing-masing siswa.
+
+## Mengapa Jadwal Harus Diisi?
+- 🎯 **Target Absensi:** Anda tidak bisa menginput absensi jika jadwal pertemuan belum ditentukan.
+- 📱 **Mobile Notification:** Siswa akan mendapatkan pengingat otomatis di ponsel mereka berdasarkan jadwal ini.
+- 🤝 **Koordinasi Ruangan:** Menghindari bentrokan penggunaan fasilitas (seperti lapangan atau aula) antar kegiatan.
+
+---
+
+## Membuat Jadwal Pertemuan
+
+Setiap ekstrakurikuler dapat memiliki satu atau lebih jadwal pertemuan dalam seminggu.
+
+### Langkah-langkah Input Jadwal:
+
+1. **Akses Halaman Jadwal**
+   - Buka menu **Kesiswaan** → **Ekstrakurikuler** → **Jadwal (Timetable)**.
+
+2. **Pilih Ekstrakurikuler**
+   - Cari dan pilih nama ekstrakurikuler dari dropdown (misal: "Basket").
+
+3. **Tentukan Waktu & Hari**
+   - **Hari:** Pilih hari pertemuan (Senin - Minggu).
+   - **Waktu Mulai:** Masukkan jam dimulainya kegiatan (format 24 jam, misal `15:30`).
+   - **Waktu Selesai:** Masukkan jam berakhirnya kegiatan (misal `17:00`).
+
+4. **Simpan Jadwal**
+   - Klik **Store Schedule**.
+   - Data akan tersimpan di tabel `eskul_timetables`.
+
+> [!IMPORTANT]
+> Sistem memiliki validasi waktu: **Waktu Selesai must be greater than Waktu Mulai**. Jika Anda memasukkan jam yang terbalik, sistem akan mengeluarkan pesan error.
+
+---
+
+## Mengelola Jadwal yang Sudah Ada
+
+Setelah jadwal dibuat, Anda dapat memantau seluruh agenda mingguan melalui tabel yang tersedia.
+
+### Melihat Tabel Jadwal
+Tabel akan menampilkan ringkasan seperti berikut:
+
+| Ekstrakurikuler | Hari | Jam | Aksi |
+| :--- | :--- | :--- | :--- |
+| Basket | Selasa | 15:30 - 17:00 | ✏️ 🗑️ |
+| Basket | Jumat | 14:00 - 15:30 | ✏️ 🗑️ |
+| Pramuka | Sabtu | 08:00 - 10:00 | ✏️ 🗑️ |
+
+### Mengubah (Edit) Jadwal
+Jika terjadi perubahan kebijakan sekolah atau pergeseran jam:
+1. Klik ikon **Edit** pada jadwal yang dimaksud.
+2. Perbarui hari atau jam pada modal yang muncul.
+3. Klik **Save Changes**.
+
+### Menghapus Jadwal
+Terdapat dua cara untuk menghapus:
+- **Hapus Satuan:** Klik ikon sampah merah pada baris tertentu untuk menghapus satu sesi saja.
+- **Reset All (Nuclear Option):** Gunakan tombol **Reset All Schedules** jika ingin membersihkan seluruh jadwal untuk ekstrakurikuler tertentu (misal saat pergantian semester).
+
+> [!WARNING]
+> Menghapus atau me-reset jadwal **tidak akan** menghapus data absensi yang sudah terlanjur direkam di masa lalu, namun akan menghentikan notifikasi ke siswa dan mencegah input absensi baru untuk hari-hari tersebut.
+
+---
+
+## Best Practices dalam Penjadwalan
+
+1. **Konsistensi:** Usahakan jadwal tetap sama sepanjang semester untuk memudahkan siswa mengatur waktu belajar mereka.
+2. **Durasi Ideal:** Rata-rata kegiatan ekstrakurikuler efektif berlangsung selama 90-120 menit.
+3. **Koordinasi:** Cek jadwal ekstrakurikuler lain agar siswa yang aktif di lebih dari satu kegiatan tidak mengalami bentrokan waktu.
+4. **Update Berkala:** Segera update jadwal di sistem eSchool jika ada perubahan mendadak agar siswa tidak datang ke sekolah saat kegiatan ditiadakan.
+
+---
+
+## Tips & Troubleshooting
+
+- **Jadwal Tidak Muncul di App?**
+  Pastikan Anda sudah menekan tombol simpan dan mendapatkan notifikasi sukses. Coba lakukan *refresh* pada aplikasi mobile siswa.
+  
+- **Konflik Jadwal:**
+  Sistem saat ini memperbolehkan input jam yang sama antar ekstrakurikuler yang berbeda (karena mungkin tempat latihannya berbeda). Pastikan coach sudah berkoordinasi secara manual.
+
+- **Pertemuan Insidental:**
+  Jika ada latihan tambahan di luar jadwal rutin (misal menjelang perlombaan), Anda sebaiknya tetap menginputnya sebagai jadwal baru agar absensi latihan tambahan tersebut dapat terekam secara sistem.

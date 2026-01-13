@@ -1,0 +1,108 @@
+---
+title: Daftar Anggota Ekstrakurikuler
+description: Panduan manajemen pendaftaran siswa, proses approval anggota, dan pengelolaan database peserta ekstrakurikuler
+---
+
+
+
+Halaman **Anggota (Members)** adalah tempat di mana Admin dan Guru Pembina memantau sekaligus mengelola siapa saja siswa yang berhak mengikuti kegiatan. Sistem ini dirancang untuk menangani alur pendaftaran dari aplikasi mobile siswa hingga disetujui atau ditolak oleh pihak sekolah.
+
+## Alur Pendaftaran Siswa
+
+Secara umum, proses menjadi anggota mengikuti tahapan berikut:
+
+
+1. **Siswa** memilih ekstrakurikuler di ponsel mereka dan mengklik "Daftar".
+2. **Data** masuk ke sistem dashboard Admin dengan status **Pending**.
+3. **Admin/Coach** meninjau data tersebut.
+4. **Keputusan** diambil (Disetujui/Ditolak).
+5. **Siswa** menerima notifikasi instan mengenai status pendaftaran mereka.
+
+---
+
+## Memahami Status Pendaftaran
+
+Penting bagi Anda untuk mengenali badge status yang muncul di tabel anggota:
+
+| Status | Label | Arti |
+| :--- | :--- | :--- |
+| **Pending** | 🟡  | Siswa baru mendaftar, belum diproses. |
+| **Approved** | 🟢  | Siswa resmi jadi anggota dan akan muncul di lembar absensi. |
+| **Rejected** | 🔴  | Siswa ditolak bergabung . |
+
+---
+
+## Mengelola Daftar Anggota
+
+Halaman ini dilengkapi dengan fitur filter yang sangat membantu jika sekolah Anda memiliki ribuan siswa dan puluhan kegiatan.
+
+### 1. Filter & Pencarian
+Anda dapat mempersempit daftar yang tampil berdasarkan:
+- **Nama Ekstrakurikuler:** Lihat anggota khusus basket saja, misalnya.
+- **Tingkat Kelas (Grade Level):** Filter siswa kelas 10, 11, atau 12.
+- **Status Approval:** Tampilkan hanya siswa yang statusnya masih `Pending` untuk segera diproses.
+- **Search Bar:** Ketik nama siswa atau NISN untuk pencarian spesifik.
+
+### 2. Proses Approval (Disetujui)
+Terdapat dua cara untuk menyetujui pendaftaran:
+
+#### **A. Quick Approve (Individual)**
+- Temukan siswa dengan status Pending.
+- Klik tombol **Centang (✓)** di kolom Action.
+- Klik "Ya" pada konfirmasi.
+- Status siswa berubah menjadi **Approved**.
+
+#### **B. Bulk Approve (Massal)**
+Gunakan fitur ini jika ada banyak pendaftar sekaligus di awal semester:
+- Centang kotak di sebelah kiri nama-nama siswa (atau centang "Select All" di header).
+- Klik tombol biru **Approve Selected Members** yang muncul di atas tabel.
+- Seluruh siswa yang dicentang akan disetujui dalam satu klik. ⚡
+
+### 3. Reject (Ditolak)
+Jika siswa tidak memenuhi kriteria atau kuota sudah penuh:
+- Klik tombol **Silang (✗)** merah.
+- Setelah ditolak, siswa tersebut tidak akan muncul di daftar absensi.
+- Data tetap tersimpan sebagai riwayat (History), Anda bisa membatalkan penolakan ini di kemudian hari jika diperlukan.
+
+---
+
+## Detail Anggota (Modal View)
+
+Untuk melihat informasi lengkap sebelum memberi approval, klik pada baris nama siswa. Modal detail akan muncul menampilkan:
+- **Foto Profil Siswa**
+- **NISN & Kelas**
+- **Nama Guru Pembina**
+- **Tanggal Pendaftaran**
+
+Di bagian bawah modal ini juga tersedia tombol **Approve** dan **Reject** sebagai alternatif navigasi.
+
+---
+
+## Export Laporan Anggota
+
+Apakah Anda butuh menyetor daftar anggota ke Kepala Sekolah atau Dinas Pendidikan?
+- Klik tombol **Export**.
+- Pilih format (misal: **Excel**).
+- File akan terunduh dengan nama otomatis: `ekstrakurikuler-members-TANGGAL.xlsx`.
+- Laporan mencakup Nama, Kelas, NISN, dan Tanggal Bergabung.
+
+---
+
+## Best Practices Manajemen Anggota
+
+- ✅ **Cek Rutin:** Lakukan pengecekan pendaftaran baru minimal 2 hari sekali agar siswa tidak menunggu terlalu lama.
+- ✅ **Komunikasi Kuota:** Jika kuota terbatas, segera ubah status menjadi `Rejected` bagi pendaftar yang tidak masuk kuota agar mereka bisa mendaftar di kegiatan lain.
+- ✅ **Validasi Data:** Pastikan siswa yang mendaftar benar-benar berasal dari tingkat kelas yang diperbolehkan untuk kegiatan tersebut.
+- ✅ **Gunakan Bulk Action:** Selalu gunakan Bulk Approve untuk menghemat waktu saat periode tahun ajaran baru.
+
+---
+
+## Troubleshooting
+
+- **Siswa Mengaku Sudah Daftar tapi Tidak Muncul?**
+  1. Mintalah siswa memastikan koneksi internet saat menekan tombol daftar di HP.
+  2. Pastikan Anda tidak sedang mengaktifkan filter yang salah (misal: filter kelas yang berbeda).
+  3. Coba tekan tombol **Refresh** pada tabel.
+
+- **Tidak Bisa Mengklik Button Approve?**
+  Pastikan akun Anda memiliki permission `extracurricular-edit`. Hubungi Super Admin jika menu tersebut terkunci bagi Anda.

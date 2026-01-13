@@ -4,6 +4,7 @@
     "pages": [
         "dashboard",
         "student",
-        "attendance"
+        "attendance",
+        "extracurricular"
     ]
 }

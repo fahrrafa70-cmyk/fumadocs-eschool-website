@@ -1,0 +1,84 @@
+---
+title: Laporan Absensi Ekstrakurikuler
+description: Panduan melihat rekapitulasi kehadiran bulanan dan mengunduh laporan resmi ekstrakurikuler
+---
+
+
+
+Data tanpa analisis hanyalah tumpukan angka. Halaman **Laporan Absensi Ekstrakurikuler** membantu Admin dan Guru Pembina memantau kehadiran siswa secara mendetail per tanggal dalam satu bulan. Laporan ini merupakan format resmi yang dapat dicetak untuk kebutuhan administrasi sekolah.
+
+## Membuat Laporan Kehadiran
+
+Untuk menampilkan data kehadiran siswa, ikuti langkah berikut:
+
+1. **Pilih Filter Laporan**
+   - **Ekstrakurikuler:** Pilih nama kegiatan dari dropdown (misal: "Bulu Tangkis").
+   - **Bulan:** Pilih bulan yang ingin ditampilkan (misal: "Januari").
+
+2. **Generate Data**
+   - Klik tombol merah **Generate**.
+   - Sistem akan memproses data dan menampilkan tabel kehadiran di bagian bawah.
+
+---
+
+## Memahami Tabel Laporan Kehadiran
+
+Tabel yang dihasilkan memiliki format grid bulanan yang mencakup informasi berikut:
+
+### 1. Informasi Header
+Bagian atas laporan menampilkan informasi konteks:
+- **Nama Ekstrakurikuler & Bulan/Tahun.**
+- **Pembina:** Nama guru pembina yang bertanggung jawab.
+- **Semester & Tahun Pelajaran:** Periode akademik yang sedang berjalan.
+
+### 2. Struktur Tabel
+Tabel ini memuat data absensi harian siswa selama satu bulan penuh:
+
+| Kolom | Penjelasan |
+| :--- | :--- |
+| **NO** | Nomor urut siswa. |
+| **NAMA** | Nama lengkap siswa. |
+| **KELAS** | Kelas siswa. |
+| **L/P** | Jenis Kelamin (Laki-laki / Perempuan). |
+| **01 - 31** | Kolom tanggal harian dalam bulan tersebut. |
+| **JUMLAH** | Rekap total kehadiran per kategori (H, S, I, A). |
+| **KETERANGAN** | Catatan tambahan jika diperlukan. |
+
+### 3. Kode Status Kehadiran
+Di bawah tabel, terdapat legenda kode untuk memudahkan pembacaan:
+- **H** = Hadir
+- **S** = Sakit
+- **I** = Izin
+- **A** = Alpha (tanpa keterangan)
+
+---
+
+## Export & Cetak Laporan
+
+Setelah laporan di-*generate*, Anda dapat mengunduhnya dengan mengklik ikon berwarna merah di pojok kanan atas tabel:
+
+- **Ikon PDF:** Mengunduh laporan dalam format PDF yang siap cetak (termasuk kolom tanda tangan pembina).
+- **Ikon Excel:** Mengunduh data dalam format Spreadsheet untuk keperluan pengolahan data internal.
+
+
+
+> [!TIP]
+> **Nama File Otomatis:** Sistem akan memberikan nama file sesuai dengan filter yang dipilih, contoh: `rekap-Bulu Tangkis-Januari-2026.xlsx`.
+
+---
+
+## Troubleshooting Laporan
+
+- **Data Tidak Muncul (Kosong)?**
+  - Pastikan bulan dan tahun yang Anda pilih sudah benar.
+  - Cek apakah Coach sudah melakukan **Save Attendance** pada bulan tersebut. Jika tidak ada absensi yang diinput, rekap tidak akan bisa ditampilkan.
+
+- **Persentase Muncul 0%?**
+  Mungkin ada data pertemuan yang dibuat (jadwal), tetapi status kehadirannya belum diisi sama sekali oleh coach.
+
+- **Siswa yang Sudah Keluar Muncul di Rekap?**
+  Jika siswa keluar di tengah bulan, namanya akan tetap muncul di rekap bulan tersebut sebagai sejarah kehadiran, namun akan hilang pada rekap bulan berikutnya.
+
+---
+
+*Terakhir diperbarui: Januari 2026 - eSchool Documentation Team*

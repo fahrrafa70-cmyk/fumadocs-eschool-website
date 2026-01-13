@@ -1,0 +1,90 @@
+---
+title: Extracurricular
+description: Extracurricular Module Guide for eSchool Admin
+icon: Trophy
+---
+
+
+The **Extracurricular** module is used to manage all additional activities outside of school hours. Through this module, Admins can manage the list of activities, meeting schedules, and monitor student participation through an integrated attendance system.
+
+## Key Features
+
+Select one of the guides below to get started:
+
+import { Cards, Card } from 'fumadocs-ui/components/card';
+import { Settings, Calendar, Users, CheckSquare, BarChart3, ChevronRight } from 'lucide-react';
+
+<Cards>
+  <Card
+    title={
+      <div className="flex items-center justify-between w-full">
+        <div className="flex items-center gap-2">
+          <Settings className="h-5 w-5 text-fd-primary" />
+          <span>Manage Extracurricular</span>
+        </div>
+        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
+      </div>
+    }
+    href="./manage-extracurricular"
+  />
+  <Card
+    title={
+      <div className="flex items-center justify-between w-full">
+        <div className="flex items-center gap-2">
+          <Calendar className="h-5 w-5 text-fd-primary" />
+          <span>Activity Schedule</span>
+        </div>
+        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
+      </div>
+    }
+    href="./extracurricular-schedule"
+  />
+  <Card
+    title={
+      <div className="flex items-center justify-between w-full">
+        <div className="flex items-center gap-2">
+          <Users className="h-5 w-5 text-fd-primary" />
+          <span>Member List</span>
+        </div>
+        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
+      </div>
+    }
+    href="./extracurricular-members"
+  />
+  <Card
+    title={
+      <div className="flex items-center justify-between w-full">
+        <div className="flex items-center gap-2">
+          <CheckSquare className="h-5 w-5 text-fd-primary" />
+          <span>Input Attendance</span>
+        </div>
+        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
+      </div>
+    }
+    href="./extracurricular-attendance"
+  />
+  <Card
+    title={
+      <div className="flex items-center justify-between w-full">
+        <div className="flex items-center gap-2">
+          <BarChart3 className="h-5 w-5 text-fd-primary" />
+          <span>Reports & Recaps</span>
+        </div>
+        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
+      </div>
+    }
+    href="./extracurricular-attendance-report"
+  />
+</Cards>
+
+---
+
+## Workflow Summary
+
+To run this module effectively, follow this workflow:
+
+1. **Define Activities:** Register extracurricular names and appoint a Coach in the [Manage Extracurricular](./manage-extracurricular) menu.
+2. **Set Schedule:** Determine meeting days and times in the [Activity Schedule](./extracurricular-schedule) menu.
+3. **Member Approval:** Process student registrations from the mobile app in the [Member List](./extracurricular-members) menu.
+4. **Record Attendance:** Record the attendance sheet every time a meeting is finished in the [Input Attendance](./extracurricular-attendance) menu.
+5. **Monitoring:** Evaluate student participation every end of the month in the [Reports & Recaps](./extracurricular-attendance-report) menu.

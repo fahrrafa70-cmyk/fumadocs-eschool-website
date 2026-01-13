@@ -1,0 +1,91 @@
+---
+title: Ekstrakurikuler
+description: Panduan Modul Ekstrakurikuler untuk Admin eSchool
+icon: Trophy
+---
+
+# Ekstrakurikuler 🏆
+
+Modul **Ekstrakurikuler** digunakan untuk mengelola seluruh kegiatan tambahan di luar jam pelajaran sekolah. Melalui modul ini, Admin dapat mengatur daftar kegiatan, jadwal pertemuan, hingga memantau keaktifan siswa melalui sistem absensi yang terintegrasi.
+
+## Fitur Utama
+
+Pilih salah satu panduan di bawah ini untuk memulai:
+
+import { Cards, Card } from 'fumadocs-ui/components/card';
+import { Settings, Calendar, Users, CheckSquare, BarChart3, ChevronRight } from 'lucide-react';
+
+<Cards>
+  <Card
+    title={
+      <div className="flex items-center justify-between w-full">
+        <div className="flex items-center gap-2">
+          <Settings className="h-5 w-5 text-fd-primary" />
+          <span>Kelola Ekstrakurikuler</span>
+        </div>
+        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
+      </div>
+    }
+    href="./manage-extracurricular"
+  />
+  <Card
+    title={
+      <div className="flex items-center justify-between w-full">
+        <div className="flex items-center gap-2">
+          <Calendar className="h-5 w-5 text-fd-primary" />
+          <span>Jadwal Kegiatan</span>
+        </div>
+        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
+      </div>
+    }
+    href="./extracurricular-schedule"
+  />
+  <Card
+    title={
+      <div className="flex items-center justify-between w-full">
+        <div className="flex items-center gap-2">
+          <Users className="h-5 w-5 text-fd-primary" />
+          <span>Daftar Anggota</span>
+        </div>
+        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
+      </div>
+    }
+    href="./extracurricular-members"
+  />
+  <Card
+    title={
+      <div className="flex items-center justify-between w-full">
+        <div className="flex items-center gap-2">
+          <CheckSquare className="h-5 w-5 text-fd-primary" />
+          <span>Input Absensi</span>
+        </div>
+        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
+      </div>
+    }
+    href="./extracurricular-attendance"
+  />
+  <Card
+    title={
+      <div className="flex items-center justify-between w-full">
+        <div className="flex items-center gap-2">
+          <BarChart3 className="h-5 w-5 text-fd-primary" />
+          <span>Laporan & Rekap</span>
+        </div>
+        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
+      </div>
+    }
+    href="./extracurricular-attendance-report"
+  />
+</Cards>
+
+---
+
+## Ringkasan Alur Kerja
+
+Untuk menjalankan modul ini secara efektif, ikuti alur kerja berikut:
+
+1. **Definisikan Kegiatan:** Daftarkan nama ekstrakurikuler dan tunjuk Guru Pembina di menu [Kelola Ekstrakurikuler](./manage-extracurricular).
+2. **Atur Jadwal:** Tentukan hari dan jam pertemuan di menu [Jadwal Kegiatan](./extracurricular-schedule).
+3. **Approval Anggota:** Proses pendaftaran siswa yang masuk dari mobile app di menu [Daftar Anggota](./extracurricular-members).
+4. **Catat Kehadiran:** Tanda tangani daftar hadir setiap kali pertemuan selesai di menu [Input Absensi](./extracurricular-attendance).
+5. **Monitoring:** Evaluasi keaktifan siswa setiap akhir bulan di menu [Laporan & Rekap](./extracurricular-attendance-report).

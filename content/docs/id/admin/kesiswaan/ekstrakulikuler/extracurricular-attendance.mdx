@@ -1,0 +1,96 @@
+---
+title: Absensi Ekstrakurikuler
+description: Panduan mencatat kehadiran siswa pada kegiatan ekstrakurikuler secara harian dan mengelola data presensi
+---
+
+
+
+Mencatat kehadiran adalah tanggung jawab utama Admin atau Guru Pembina pada setiap pertemuan. Halaman **Absensi** di eSchool dirancang agar proses input data menjadi sangat cepat. Data yang Anda masukkan di sini akan langsung dikalkulasi menjadi persentase kehadiran di akhir bulan.
+
+## Persyaratan Sebelum Input Absensi
+
+Sebelum Anda bisa mengisi daftar hadir, pastikan dua hal berikut sudah terpenuhi:
+1. **Pendaftaran Anggota:** Siswa harus sudah berstatus **Approved** (Disetujui). Siswa yang masih pending tidak akan muncul di lembar absensi.
+2. **Jadwal (Timetable):** Estrakurikuler tersebut harus sudah memiliki jadwal pertemuan di sistem.
+
+---
+
+## Langkah-langkah Mengisi Absensi
+
+Ikuti prosedur berikut pada setiap pertemuan ekstrakurikuler berlangsung:
+
+### 1. Memilih Sesi Pertemuan
+- Navigasi ke menu **Kesiswaan** → **Ekstrakurikuler** → **Input Absensi**.
+- **Pilih Ekstrakurikuler:** Gunakan dropdown untuk memilih kegiatan.
+  - *Catatan:* Guru Pembina hanya akan melihat ekstrakurikuler yang mereka bina.
+- **Pilih Tanggal:** Klik pada kalender picker untuk menentukan tanggal latihan. Secara default, sistem akan mengarah ke tanggal hari ini.
+
+### 2. Memuat Daftar Siswa
+- Klik tombol **Show Students** atau **Load Attendance**.
+- Sistem akan menampilkan tabel seluruh siswa yang sudah menjadi anggota resmi.
+
+### 3. Memberikan Status Kehadiran
+Pada kolom **Aksi**, Anda dapat memilih status presensi siswa menggunakan radio button. Tersedia 4 pilihan status:
+
+| Opsi | Penjelasan |
+| :--- | :--- |
+| **Hadir** | Siswa mengikuti kegiatan sesuai jadwal. |
+| **Sakit** | Siswa berhalangan hadir karena alasan kesehatan. |
+| **Izin** | Siswa berhalangan hadir dengan izin resmi (Cuti). |
+| **Alpa** | Siswa tidak hadir tanpa keterangan (Absent). |
+
+#### Fitur Aksi Cepat (Quick Action)
+Untuk mempercepat proses, Anda dapat menggunakan tombol **Aksi Cepat** di atas tabel. Fitur ini akan menandai **seluruh siswa** dalam daftar dengan status yang dipilih secara otomatis:
+
+- 🟢 **Hadir:** Menandai semua siswa sebagai Hadir.
+- 🟡 **Sakit:** Menandai semua siswa sebagai Sakit.
+- 🔵 **Cuti:** Menandai semua siswa sebagai Izin (Cuti).
+- 🔴 **Tidak Hadir:** Menandai semua siswa sebagai Alpa.
+
+### 4. Menyimpan Data
+- Setelah semua siswa ditandai, scroll ke bawah halaman.
+- Klik tombol **Simpan** (ikon disket merah).
+- Tunggu notifikasi sukses dari sistem.
+
+---
+
+## Mengubah Absensi yang Salah
+
+Bagaimana jika Anda salah klik atau baru teringat ada siswa yang izin setelah data disimpan?
+
+1. Pastikan Anda berada di halaman **Input Absensi**.
+2. Pilih kembali **Ekstrakurikuler** dan **Tanggal** yang sama dengan data yang ingin diubah.
+3. Klik **Load**. Sistem akan menampilkan data yang sudah pernah disimpan sebelumnya.
+4. Ubah status presensi siswa yang dimaksud.
+5. Klik tombol **Update Attendance**.
+
+---
+
+## Validasi & Keamanan Data
+
+- **Cek Jadwal:** Sistem akan memberikan peringatan (Warning) jika Anda mencoba menginput absensi pada tanggal yang tidak sesuai dengan jadwal rutin. Meskipun ada peringatan, Anda tetap bisa menyimpannya (berguna untuk latihan tambahan/insidental).
+- **Log Perubahan:** Setiap perubahan (Update) absensi akan dicatat oleh sistem mengenai siapa yang mengubah dan kapan dilakukan.
+- **Penyimpanan Cloud:** Data langsung tersimpan di server pusat, sehingga aman dari risiko kehilangan data manual seperti di buku absen kertas.
+
+---
+
+## Tips & Best Practices
+
+- ⚡ **Input Real-time:** Isilah absensi langsung saat kegiatan berlangsung atau maksimal pada hari yang sama. Menunda input berisiko salah ingatan.
+- 📸 **Dokumentasi Pendukung:** Selalu ambil foto kegiatan sebagai bukti fisik jika suatu saat terjadi sengketa mengenai kehadiran siswa.
+- 🗣️ **Komunikasi:** Jika ada siswa yang sering absen (lebih dari 3x berturut-turut), segera gunakan fitur rekap untuk melaporkannya kepada Wali Kelas.
+
+---
+
+## FAQ (Pertanyaan Umum)
+
+**Q: Mengapa nama siswa si A tidak ada di daftar absen?**
+- ✅ Cek status pendaftaran si A di menu **Daftar Anggota**. Kemungkinan statusnya masih `Pending` atau belum diapprove sama sekali.
+
+**Q: Apakah saya bisa menginput absensi untuk bulan lalu?**
+- ✅ Bisa, selama rentang tanggal tersebut berada dalam tahun ajaran yang aktif. Namun, sangat disarankan untuk disiplin mengisi secara harian.
+
+**Q: Apakah orang tua bisa melihat jika anaknya tidak hadir?**
+- ✅ Ya, orang tua akan mendapatkan notifikasi atau dapat melihat riwayat absensi ekstrakurikuler melalui aplikasi mobile mereka masing-masing.
+  
+---

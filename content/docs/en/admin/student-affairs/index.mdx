@@ -5,7 +5,7 @@ icon: Building2
 ---
 
 import { Cards, Card } from 'fumadocs-ui/components/card';
-import { LayoutDashboard, UserCircle, CheckSquare, ChevronRight } from 'lucide-react';
+import { LayoutDashboard, UserCircle, CheckSquare, ChevronRight, Trophy } from 'lucide-react';
 
 <Cards>
   <Card
@@ -18,7 +18,7 @@ import { LayoutDashboard, UserCircle, CheckSquare, ChevronRight } from 'lucide-r
         <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
       </div>
     }
-    href="./dashboard-kesiswaan"
+    href="./dashboard"
   />
   <Card
     title={
@@ -30,7 +30,7 @@ import { LayoutDashboard, UserCircle, CheckSquare, ChevronRight } from 'lucide-r
         <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
       </div>
     }
-    href="./siswa"
+    href="./student"
   />
   <Card
     title={
@@ -42,6 +42,18 @@ import { LayoutDashboard, UserCircle, CheckSquare, ChevronRight } from 'lucide-r
         <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
       </div>
     }
-    href="./absensi"
+    href="./attendance"
+  />
+  <Card
+    title={
+      <div className="flex items-center justify-between w-full">
+        <div className="flex items-center gap-2">
+          <Trophy className="h-5 w-5 text-fd-primary" />
+          <span>Extracurricular</span>
+        </div>
+        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
+      </div>
+    }
+    href="./extracurricular"
   />
 </Cards>

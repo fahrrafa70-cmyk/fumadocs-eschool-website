@@ -2,7 +2,6 @@
     "title": "Ekstrakurikuler",
     "icon": "Trophy",
     "pages": [
-        "index",
         "manage-extracurricular",
         "extracurricular-schedule",
         "extracurricular-members",

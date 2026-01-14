@@ -2,7 +2,6 @@
     "title": "Ekstrakulikuler",
     "icon": "Trophy",
     "pages": [
-        "index",
         "teacher-extracurricular-schedule",
         "teacher-extracurricular-members",
         "teacher-extracurricular-attendance",

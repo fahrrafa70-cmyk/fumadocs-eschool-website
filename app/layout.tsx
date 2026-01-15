@@ -9,7 +9,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    template: "%s",
+    template: "%s | eSchool Website",
     default: "eSchool Website",
   },
   description: "Dokumentasi eSchool Website",

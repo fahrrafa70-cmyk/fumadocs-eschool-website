@@ -1,17 +1,81 @@
 ---
-title: Jadwal Ujian
-description: Jadwal Ujian Offline
+title: Jadwal Ujian Offline
+description: Membuat dan mengelola jadwal ujian offline
 icon: Clock
 ---
 
-# **Jadwal Ujian Offline**
+<img src="/images/jadwal-ujian-offline-guru.png" alt="Deskripsi gambar" />
 
-Lihat jadwal ujian yang dilaksanakan secara tatap muka.
+Halaman **Jadwal Ujian Offline** berfungsi untuk mengatur detail pelaksanaan dari agenda ujian yang telah dibuat sebelumnya. Pada tahap ini, Guru menentukan mata pelajaran spesifik, waktu pelaksanaan, serta kriteria penilaian (skor maksimal dan KKM).
 
-<iframe
-  width="100%"
-  height="400"
-  src="about:blank"
-  frameBorder="0"
-  allowFullScreen
-></iframe>
+---
+
+### 📅 Menjadwalkan Pelaksanaan Ujian
+
+<img src="/images/buat-jadwal-ujian-offline.png" alt="Deskripsi gambar" />
+
+Pastikan Anda sudah membuat agenda ujian di halaman **[Daftar Ujian](./)** sebelum melakukan langkah-langkah berikut:
+
+**1. Temukan Agenda Ujian**  
+Pada tabel **Daftar Ujian** (di modul utama), cari ujian yang status jadwalnya masih **"Tidak"**.
+
+**2. Klik Ikon Aksi (⋮)**  
+Klik ikon tiga titik di kolom paling kanan pada baris ujian tersebut.
+
+**3. Pilih Menu "Jadwal"**  
+Setelah menu aksi terbuka, klik tombol **Jadwal** untuk masuk ke form pengaturan waktu dan mata pelajaran.
+
+<img src="/images/tambah-jadwal-ujian-offline.png" alt="Deskripsi gambar" />
+
+**4. Lengkapi Form Penjadwalan**  
+Isi data-data berikut dengan akurat:
+- **Mata Pelajaran** → Pilih subjek yang diujikan (hanya mapel yang Anda ampu).
+- **Nilai Total** → Skor tertinggi yang bisa dicapai (contoh: 100).
+- **Nilai Kelulusan** → Batas minimal KKM (contoh: 75).
+- **Jam Mulai & Selesai** → Batas waktu pengerjaan ujian.
+- **Tanggal** → Hari pelaksanaan ujian tatap muka.
+
+**5. Simpan Jadwal**  
+Klik tombol **+ Data Baru** untuk menambahkan entri jadwal, lalu klik **Simpan** untuk mengunci data secara permanen.
+
+---
+
+### 📋 Komponen Jadwal Ujian
+
+| Komponen | Penjelasan |
+| :--- | :--- |
+| **Nama Ujian** | Judul agenda ujian (seperti: PH Bab 1, Quiz, dll). |
+| **Mata Pelajaran** | Mapel terkait yang diajar oleh Guru. |
+| **Kelas** | Peserta ujian sesuai penugasan kelas. |
+| **Waktu & Tanggal** | Jadwal spesifik jam dan hari pelaksanaan. |
+| **Nilai Kelulusan** | Batas KKM yang harus dicapai siswa. |
+| **Status** | Keterangan apakah ujian **Belum Mulai** atau **Selesai**. |
+
+---
+
+### 🎓 Peran & Kewenangan Guru
+
+- 📖 **Lingkup Pengajaran** → Anda hanya dapat membuat dan melihat jadwal untuk kelas/mapel yang secara resmi Anda ajar.
+- 🛠️ **Mandiri** → Guru memiliki akses penuh untuk membuat agenda ujian tanpa harus menunggu input dari Admin Kurikulum.
+- 🕒 **Monitoring** → Pastikan status ujian berubah menjadi "Selesai" agar nilai bisa diunggah melalui menu [Unggah Hasil Ujian](./unggah-hasil-ujian).
+
+---
+
+### 🔍 Tips Navigasi
+- Gunakan fitur **Filter** di bagian atas tabel untuk mencari jadwal berdasarkan Tahun Ajaran atau Kelas tertentu.
+- Gunakan kolom **Search** untuk mencari ujian berdasarkan nama secara spesifik.
+
+---
+
+### ⚠️ Penyelesaian Masalah (Troubleshooting)
+
+| Masalah | Penyebab Umum | Solusi |
+| :--- | :--- | :--- |
+| **Mapel Tidak Ada di Pilihan** | Mata pelajaran tersebut tidak ditugaskan ke Anda di sistem. | Hubungi Bagian Kurikulum untuk verifikasi penugasan Guru Mapel. |
+| **Gagal Menyimpan Ujian** | Ada kolom wajib (*) yang terlewat atau kelas belum dipilih. | Pastikan semua kolom form terisi dengan benar sebelum klik Simpan. |
+| **Jadwal Tidak Muncul** | Anda baru membuat agenda ujian tetapi belum mengisi detail jadwalnya. | Klik tombol aksi (⋮) lalu pilih **Jadwal** untuk mengisi detail waktu. |
+
+---
+
+### 📞 **Butuh Bantuan Lebih Lanjut?**
+Jika Anda masih menemui kendala, hubungi kami melalui [halaman Bantuan eSchool](https://www.eschool.ac.id/#contact-us).

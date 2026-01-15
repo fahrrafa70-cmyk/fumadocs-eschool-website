@@ -5,6 +5,7 @@ import defaultMdxComponents from "fumadocs-ui/mdx";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import React from "react";
+import Link from "next/link";
 
 export async function generateMetadata({
   params,
@@ -38,10 +39,16 @@ export default async function Page({
   const iconName = page.data.icon as keyof typeof icons;
   const LucideIcon = iconName ? icons[iconName] : null;
 
-  // 3. AMBIL FULL BREADCRUMB TRAIL (Segments only)
-  // Kita ambil semua segmen slug kecuali yang terakhir (karena terakhir adalah judul halaman)
-  // Contoh: ["admin", "kurikulum", "jadwal-pelajaran"] -> ["admin", "kurikulum"]
-  const breadcrumbSegments = slug && slug.length > 1 ? slug.slice(0, -1) : null;
+  // 3. AMBIL FULL BREADCRUMB TRAIL (Manual Resolution)
+  const breadcrumbItems = (slug || []).slice(0, -1).map((_, idx) => {
+    const subSlug = (slug || []).slice(0, idx + 1);
+    const parentPage = source.getPage(subSlug, locale);
+    return {
+      title: parentPage?.data?.title ?? subSlug[subSlug.length - 1].replace(/-/g, " "),
+      url: `/${locale}/docs/${subSlug.join("/")}`,
+      icon: parentPage?.data?.icon as keyof typeof icons | undefined,
+    };
+  });
 
   return (
     <DocsPage
@@ -54,23 +61,33 @@ export default async function Page({
     >
       <DocsBody>
         {/* Breadcrumb style Maroon/Brown - Full Trail with ChevronRight */}
-        {breadcrumbSegments && (
-          <div className="mb-2 flex flex-row items-center gap-1 text-xs font-bold tracking-widest text-[#8B2323] uppercase">
-            {breadcrumbSegments.map((segment, idx) => (
-              <React.Fragment key={`${segment}-${idx}`}>
-                <span>{segment.replace(/-/g, " ")}</span>
-                {idx < breadcrumbSegments.length - 1 && (
-                  <ChevronRight size={12} strokeWidth={3} className="opacity-70" />
-                )}
-              </React.Fragment>
-            ))}
+        {breadcrumbItems.length > 0 && (
+          <div className="mb-3 flex flex-row items-center gap-1.5 text-[12px] font-bold tracking-[0.1em] text-[#961b1b] dark:text-red-400/80 uppercase">
+            {breadcrumbItems.map((item, idx) => {
+               const BreadcrumbIcon = item.icon ? icons[item.icon] : null;
+
+               return (
+                <React.Fragment key={item.url}>
+                  <Link 
+                    href={item.url}
+                    className="flex items-center gap-1.5 text-[#961b1b] dark:text-red-400/90 no-underline opacity-80 hover:opacity-100 transition-opacity hover:underline decoration-[#961b1b]/30 dark:decoration-red-400/30 decoration-1 underline-offset-4"
+                  >
+                    {BreadcrumbIcon && <BreadcrumbIcon size={18} strokeWidth={2.5} />}
+                    <span>{item.title}</span>
+                  </Link>
+                  {idx < breadcrumbItems.length - 1 && (
+                    <ChevronRight size={18} strokeWidth={3} className="opacity-70 dark:opacity-40 mx-0.5" />
+                  )}
+                </React.Fragment>
+              );
+            })}
           </div>
         )}
 
         <div className="mb-8 flex flex-row items-center gap-3">
           {/* Ikon - Softer & Balanced Maroon/Brown */}
           {LucideIcon && (
-            <div className="flex shrink-0 items-center justify-center text-[#A55757]">
+            <div className="flex shrink-0 items-center justify-center text-[#A55757] dark:text-red-400/90">
               <LucideIcon size={32} strokeWidth={2.5} />
             </div>
           )}

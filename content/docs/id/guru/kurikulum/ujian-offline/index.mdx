@@ -4,44 +4,57 @@ description: Manajemen Ujian Offline untuk Guru
 icon: MonitorOff
 ---
 
-import { Cards, Card } from 'fumadocs-ui/components/card';
-import { Calendar, Upload, FileText, ChevronRight } from 'lucide-react';
+Halaman **Ujian Offline** merupakan pusat pengelolaan ujian berbasis tatap muka. Meskipun secara default agenda ujian besar dikelola oleh **Admin Kurikulum**, sistem ini juga memberikan wewenang kepada **Guru** untuk membuat agenda ujian dan jadwal secara mandiri untuk mata pelajaran yang diampu, dengan tetap berada di bawah pengawasan dan koordinasi pusat.
 
-<Cards>
-  <Card
-    title={
-      <div className="flex items-center justify-between w-full">
-        <div className="flex items-center gap-2">
-          <Calendar className="h-5 w-5 text-fd-primary" />
-          <span>Jadwal</span>
-        </div>
-        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
-      </div>
-    }
-    href="./jadwal"
-  />
-  <Card
-    title={
-      <div className="flex items-center justify-between w-full">
-        <div className="flex items-center gap-2">
-          <Upload className="h-5 w-5 text-fd-primary" />
-          <span>Unggah Hasil Ujian</span>
-        </div>
-        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
-      </div>
-    }
-    href="./unggah-hasil-ujian"
-  />
-  <Card
-    title={
-      <div className="flex items-center justify-between w-full">
-        <div className="flex items-center gap-2">
-          <FileText className="h-5 w-5 text-fd-primary" />
-          <span>Hasil Ujian</span>
-        </div>
-        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
-      </div>
-    }
-    href="./hasil-ujian"
-  />
-</Cards>
+---
+
+### ➕ Membuat Agenda Ujian Offline Baru
+
+<img src="/images/ujian-offline-guru.png" alt="Deskripsi gambar" />
+
+Sebagai Guru, Anda dapat membuat agenda ujian (seperti Ulangan Harian, Kuis, atau UTS) secara mandiri untuk kelas yang Anda ajar:
+
+1. **Masuk ke Menu Ujian Offline**  
+   Di bagian atas halaman, Anda akan menemukan formulir pembuatan ujian.
+
+2. **Isi Formulir Pembuatan Ujian**  
+   Lengkapi data berikut:
+   - **Nama Ujian** → Contoh: "Penilaian Harian 1 - Logika Matematika".
+   - **Tahun Ajaran** → Pilih tahun ajaran yang sedang aktif.
+   - **Tingkatan** → Pilih tingkatan kelas (X, XI, XII).
+   - **Kelas** → Pilih kelas spesifik yang akan mengikuti ujian. Anda bisa memilih satu atau beberapa kelas sekaligus.
+   - **Deskripsi** → Tambahkan instruksi atau keterangan tambahan jika diperlukan.
+
+3. **Simpan Data Ujian**  
+   Klik tombol **Simpan**. Ujian yang telah dibuat akan otomatis muncul dalam tabel **Daftar Ujian** di bagian bawah.
+
+---
+
+### 📋 Daftar Ujian
+
+<img src="/images/daftar-ujian-offline-guru.png" alt="Deskripsi gambar" />
+
+Setelah ujian dibuat, tabel Daftar Ujian akan menampilkan ringkasan informasi:
+
+- **Nama Ujian & Keterangan**
+- **Kelas Peserta**
+- **Status Jadwal** → Menunjukkan apakah ujian tersebut sudah memiliki jadwal pelaksanaan (Ya/Tidak).
+- **Status Publikasi** → Menunjukkan apakah nilai sudah dirilis ke siswa.
+
+Untuk melanjutkan ke tahap berikutnya (mengatur waktu dan mata pelajaran), silakan menuju ke menu **[Jadwal Ujian](./jadwal)**.
+
+---
+
+### 🏛️ Alur Kerja Utama Guru
+
+1. **Buat Agenda Ujian** (pada halaman ini).
+2. **Atur Jadwal Pelaksanaan** (melalui menu [Jadwal Ujian](./jadwal)).
+3. **Laksanakan Ujian** secara offline.
+4. **Isi Nilai** (melalui menu [Unggah Hasil Ujian](./unggah-hasil-ujian)).
+5. **Publikasikan Nilai** (klik ikon ⋮ → Publikasikan pada Daftar Ujian).
+6. **Monitor Rekapitulasi** (melalui menu [Hasil Ujian](./hasil-ujian)).
+
+---
+
+### 📞 **Butuh Bantuan Lebih Lanjut?**
+Jika Anda masih menemui kendala, hubungi kami melalui [halaman Bantuan eSchool](https://www.eschool.ac.id/#contact-us).

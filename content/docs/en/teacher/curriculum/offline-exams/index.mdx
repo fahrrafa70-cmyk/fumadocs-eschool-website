@@ -4,44 +4,57 @@ description: Offline Exam Management for Teachers
 icon: MonitorOff
 ---
 
-import { Cards, Card } from 'fumadocs-ui/components/card';
-import { Calendar, Upload, FileText, ChevronRight } from 'lucide-react';
+The **Offline Exams** page is the central hub for managing face-to-face exams. While major exam agendas are typically managed by the **Curriculum Admin**, the system also empowers **Teachers** to independently create exam agendas and schedules for their assigned subjects, while remaining under central supervision and coordination.
 
-<Cards>
-  <Card
-    title={
-      <div className="flex items-center justify-between w-full">
-        <div className="flex items-center gap-2">
-          <Calendar className="h-5 w-5 text-fd-primary" />
-          <span>Exam Schedule</span>
-        </div>
-        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
-      </div>
-    }
-    href="./schedule"
-  />
-  <Card
-    title={
-      <div className="flex items-center justify-between w-full">
-        <div className="flex items-center gap-2">
-          <Upload className="h-5 w-5 text-fd-primary" />
-          <span>Upload Exam Results</span>
-        </div>
-        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
-      </div>
-    }
-    href="./upload-results"
-  />
-  <Card
-    title={
-      <div className="flex items-center justify-between w-full">
-        <div className="flex items-center gap-2">
-          <FileText className="h-5 w-5 text-fd-primary" />
-          <span>Exam Results</span>
-        </div>
-        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
-      </div>
-    }
-    href="./exam-results"
-  />
-</Cards>
+---
+
+### ➕ Creating a New Offline Exam Agenda
+
+<img src="/images/ujian-offline-guru.png" alt="Exam creation" />
+
+As a Teacher, you can independently create exam agendas (such as Daily Quizzes, Tests, or Midterms) for the classes you teach:
+
+1. **Access the Offline Exams Menu**  
+   At the top of the page, you will find the exam creation form.
+
+2. **Fill in the Exam Creation Form**  
+   Complete the following data:
+   - **Exam Name** → Example: "Daily Assessment 1 - Mathematical Logic".
+   - **Academic Year** → Select the current active academic year.
+   - **Level** → Select the class level (X, XI, XII).
+   - **Class** → Select the specific class(es) that will take the exam. You can select one or several classes at once.
+   - **Description** → Add instructions or additional information if needed.
+
+3. **Save Exam Data**  
+   Click the **Save** button. The created exam will automatically appear in the **Exam List** table at the bottom.
+
+---
+
+### 📋 Exam List
+
+<img src="/images/daftar-ujian-offline-guru.png" alt="Exam List" />
+
+Once an exam is created, the Exam List table will display summary information:
+
+- **Exam Name & Description**
+- **Participating Classes**
+- **Schedule Status** → Indicates whether the exam has a set schedule (Yes/No).
+- **Publication Status** → Indicates whether the scores have been released to students.
+
+To proceed to the next stage (setting the time and subject), please go to the **[Exam Schedule](./schedule)** menu.
+
+---
+
+### 🏛️ Main Teacher Workflow
+
+1. **Create Exam Agenda** (on this page).
+2. **Set Implementation Schedule** (via the [Exam Schedule](./schedule) menu).
+3. **Conduct Exam** offline.
+4. **Fill in Scores** (via the [Upload Results](./upload-results) menu).
+5. **Publish Scores** (click icon ⋮ → Publish on Exam List).
+6. **Monitor Recap** (via the [Exam Results](./exam-results) menu).
+
+---
+
+### 📞 **Need Further Assistance?**
+If you still encounter issues, contact us via the [eSchool Help Page](https://www.eschool.ac.id/#contact-us).

@@ -1,17 +1,68 @@
 ---
 title: Unggah Hasil Ujian
-description: Upload Nilai Ujian Offline
+description: Langkah-langkah memasukkan nilai ujian offline
 icon: Upload
 ---
 
-# **Unggah Hasil Ujian**
+<img src="/images/unggah-nilai-ujian-off.png" alt="Deskripsi gambar" />
 
-Unggah rekap nilai ujian siswa di sini.
+Fitur **Unggah Hasil Ujian** memungkinkan Guru untuk memasukkan nilai hasil ujian offline siswa ke dalam sistem melalui antarmuka (interface) pengisian nilai yang tersedia.
 
-<iframe
-  width="100%"
-  height="400"
-  src="about:blank"
-  frameBorder="0"
-  allowFullScreen
-></iframe>
+> [!IMPORTANT]
+> Pengisian hasil ujian **hanya dapat dilakukan setelah ujian berakhir** atau pada hari setelah pelaksanaan ujian. Pastikan status jadwal ujian sudah dinyatakan "Selesai" sebelum memasukkan nilai.
+
+---
+
+### 📝 Langkah-Langkah Pengisian Nilai Ujian
+
+<img src="/images/fill-cari-ujian-off.png" alt="Deskripsi gambar" />
+
+**1. Atur Filter Pencarian**  
+Pada bagian atas halaman, pilih data yang sesuai:
+- **Kelas** → Pilih kelas yang akan dinilai.
+- **Ujian** → Pilih agenda ujian terkait.
+- **Mata Pelajaran** → Pilih subjek pelajaran yang Anda ampu.
+
+**2. Klik Tombol Cari**  
+Setelah semua filter terisi, klik tombol **Cari**. Sistem akan menampilkan tabel **Daftar Nilai Ujian** yang berisi daftar nama siswa di kelas tersebut.
+
+<img src="/images/daftar-nilai-ujian-off.png" alt="Deskripsi gambar" />
+
+**3. Isi Nilai Siswa**  
+Masukkan angka nilai pada kolom yang tersedia di samping nama masing-masing siswa sesuai dengan hasil ujian mereka.
+
+**4. Verifikasi Data**  
+Periksa kembali seluruh angka yang telah dimasukkan untuk memastikan tidak ada kesalahan ketik (tipos).
+
+**5. Simpan Hasil**  
+Klik tombol **Simpan** untuk mengirim nilai ke dalam database sistem. Nilai yang tersimpan belum bisa dilihat oleh siswa atau dalam rekapitulasi akhir sebelum dipublikasikan.
+
+<img src="/images/publikasi-hasil-ujian.png" alt="Deskripsi gambar" />
+
+**6. Publikasikan Nilai**  
+Setelah nilai tersimpan, kembali ke halaman **[Daftar Ujian](./)**, klik ikon aksi (⋮) pada ujian terkait, lalu pilih **Publikasikan**. Baru setelah langkah ini, nilai dapat dilihat di menu **[Hasil Ujian](./hasil-ujian)**.
+
+---
+
+### 💡 Hal Penting yang Perlu Diperhatikan
+
+- 🕒 **Waktu Pengisian** → Tabel daftar siswa hanya akan muncul dan dapat diisi setelah jam pelaksanaan ujian pada jadwal telah berakhir.
+- 🎯 **Batas Nilai** → Angka nilai yang dimasukkan tidak boleh melebihi **Nilai Total** (skor maksimal) yang ditentukan saat pembuatan jadwal.
+- 📚 **Pembatasan Mapel** → Guru hanya dapat mengisi nilai untuk kelas dan mata pelajaran yang ditugaskan secara resmi di Siakad.
+- ✅ **Nilai Kosong** → Jika siswa tidak mengikuti ujian, harap konsultasikan dengan Admin Kurikulum mengenai kebijakan pengisian nilai (dikolomkan kosong atau nol).
+
+---
+
+### ⚠️ Penyelesaian Masalah (Troubleshooting)
+
+| Masalah | Penyebab Umum | Solusi |
+| :--- | :--- | :--- |
+| **Menu Unggah Tidak Muncul** | Waktu ujian pada jadwal belum berakhir secara sistem. | Tunggu hingga jam selesai ujian terlewati, atau hubungi Admin untuk penyesuaian jadwal. |
+| **Nilai Tidak Tersimpan** | Koneksi internet terputus saat klik Simpan atau ada nilai yang melebihi batas. | Pastikan internet stabil dan cek kembali nilai yang dimasukkan tidak melebihi skor maksimal. |
+| **Nama Siswa Tidak Ada** | Siswa tersebut tidak terdaftar dalam rombel/kelas saat jadwal dibuat. | Hubungi Admin Siakad untuk memverifikasi daftar peserta ujian di kelas tersebut. |
+| **Form Terkunci/Read-only** | Masa pengisian nilai sudah ditutup oleh Admin Kurikulum. | Hubungi bagian Kurikulum untuk meminta pembukaan akses pengisian nilai kembali jika ada revisi. |
+
+---
+
+### 📞 **Butuh Bantuan Lebih Lanjut?**
+Jika Anda masih menemui kendala, hubungi kami melalui [halaman Bantuan eSchool](https://www.eschool.ac.id/#contact-us).

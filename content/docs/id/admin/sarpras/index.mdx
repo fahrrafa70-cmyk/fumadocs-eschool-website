@@ -1,0 +1,25 @@
+---
+title: Sarpras
+description: Manajemen dokumen sarana dan prasarana sekolah
+icon: Building2
+---
+
+import { Cards, Card } from 'fumadocs-ui/components/card';
+import { FolderOpen, ChevronRight } from 'lucide-react';
+
+Modul **Sarpras (Sarana dan Prasarana)** adalah pusat digital untuk mengelola dokumen terkait fasilitas fisik sekolah, aset bangunan, catatan pemeliharaan, dan data penggunaan fasilitas.
+
+<Cards>
+  <Card
+    title={
+      <div className="flex items-center justify-between w-full">
+        <div className="flex items-center gap-2">
+          <FolderOpen className="h-5 w-5 text-fd-primary" />
+          <span>Dokumen Sarpras</span>
+        </div>
+        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
+      </div>
+    }
+    href="/id/docs/admin/sarpras/dokumen"
+  />
+</Cards>

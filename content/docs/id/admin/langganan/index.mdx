@@ -1,0 +1,49 @@
+---
+title: Langganan
+description: Kelola paket langganan eSchool sekolah Anda
+icon: CreditCard
+---
+
+import { Cards, Card } from 'fumadocs-ui/components/card';
+import { CreditCard, History, Puzzle, ChevronRight } from 'lucide-react';
+
+Modul **Langganan** memungkinkan Admin Sekolah untuk melihat paket langganan saat ini, meningkatkan ke paket berbayar, meninjau riwayat pesanan, dan mengaktifkan add-on untuk fitur tambahan.
+
+<Cards>
+  <Card
+    title={
+      <div className="flex items-center justify-between w-full">
+        <div className="flex items-center gap-2">
+          <CreditCard className="h-5 w-5 text-fd-primary" />
+          <span>Paket Langganan</span>
+        </div>
+        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
+      </div>
+    }
+    href="/id/docs/admin/langganan/paket"
+  />
+  <Card
+    title={
+      <div className="flex items-center justify-between w-full">
+        <div className="flex items-center gap-2">
+          <History className="h-5 w-5 text-fd-primary" />
+          <span>Riwayat Pesanan</span>
+        </div>
+        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
+      </div>
+    }
+    href="/id/docs/admin/langganan/riwayat-pesanan"
+  />
+  <Card
+    title={
+      <div className="flex items-center justify-between w-full">
+        <div className="flex items-center gap-2">
+          <Puzzle className="h-5 w-5 text-fd-primary" />
+          <span>Add-on</span>
+        </div>
+        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
+      </div>
+    }
+    href="/id/docs/admin/langganan/addon"
+  />
+</Cards>

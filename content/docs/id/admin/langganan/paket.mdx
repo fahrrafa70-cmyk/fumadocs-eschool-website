@@ -1,0 +1,43 @@
+---
+title: Paket Langganan
+description: Lihat dan tingkatkan paket langganan eSchool sekolah Anda
+icon: CreditCard
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Steps, Step } from 'fumadocs-ui/components/steps';
+
+Halaman **Paket Langganan** memungkinkan Admin Sekolah untuk melihat paket yang tersedia dan berlangganan atau meningkatkan paket eSchool sekolah mereka.
+
+## Mode Trial
+
+Saat sekolah baru didaftarkan, sistem dimulai dengan **Mode Trial** yang memberikan akses terbatas ke fitur eSchool. Trial mencakup:
+- Jumlah hari trial tertentu (biasanya 30 hari)
+- Akses ke fitur inti saja (Siswa, Guru, Absensi, Pengaturan Dasar)
+- Indikator gembok visual (🔒) pada fitur premium
+
+<Callout type="warning">
+  Setelah masa trial berakhir, semua fitur premium akan terkunci sampai langganan berbayar diaktifkan.
+</Callout>
+
+---
+
+## Berlangganan Paket
+
+<Steps>
+  <Step>
+    Buka **Langganan** dari sidebar
+  </Step>
+  <Step>
+    Telusuri paket yang tersedia beserta fitur-fiturnya
+  </Step>
+  <Step>
+    Klik **Berlangganan** pada paket yang diinginkan
+  </Step>
+  <Step>
+    Selesaikan pembayaran melalui gateway pembayaran yang dikonfigurasi (Xendit, Stripe, Razorpay)
+  </Step>
+  <Step>
+    Setelah pembayaran berhasil, semua fitur dalam paket Anda akan otomatis terbuka
+  </Step>
+</Steps>

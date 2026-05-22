@@ -1,0 +1,68 @@
+---
+title: Facilities Documents
+description: Manage school facilities and infrastructure documents
+icon: FolderOpen
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Steps, Step } from 'fumadocs-ui/components/steps';
+
+The **Facilities Documents** module provides a centralized document management system for everything related to the school's physical infrastructure and assets.
+
+## Overview
+
+| Item | Description |
+|------|-------------|
+| **Purpose** | Store and manage facilities-related documents |
+| **Required Permission** | `dokumen-sarpras` |
+| **Route** | `/sarpasfolder` |
+
+---
+
+## Common Document Types
+
+The Sarpras document system is designed to store:
+
+| Category | Examples |
+|----------|---------|
+| **Building Assets** | Floor plans, building conditions, renovation records |
+| **Equipment Inventory** | Lab equipment lists, furniture inventories |
+| **Maintenance Records** | Scheduled maintenance logs, repair reports |
+| **Procurement** | Purchasing documents, vendor contracts |
+| **Facility Usage** | Room booking records, utilization reports |
+
+---
+
+## Uploading Documents
+
+<Steps>
+  <Step>
+    Navigate to **Sarpras** from the main sidebar
+  </Step>
+  <Step>
+    Click on the appropriate folder or create a new one
+  </Step>
+  <Step>
+    Click **Upload** and select your file
+  </Step>
+  <Step>
+    The document will be stored and accessible to authorized facilities staff
+  </Step>
+</Steps>
+
+---
+
+## Access Control
+
+<Callout type="info">
+  Only users assigned the `dokumen-sarpras` permission can access the Facilities Document module. This is typically the Facilities/Sarpras department staff.
+</Callout>
+
+---
+
+## Folder Organization Tips
+
+- Create a top-level folder structure by year (e.g., "2024", "2025")
+- Within each year, organize by category (Buildings, Equipment, Maintenance)
+- Use clear, consistent naming for all documents
+- Include date in the filename for time-sensitive documents (e.g., `maintenance-report-2024-01.pdf`)

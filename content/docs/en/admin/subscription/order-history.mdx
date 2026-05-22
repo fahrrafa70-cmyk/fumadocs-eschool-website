@@ -1,0 +1,56 @@
+---
+title: Order History
+description: View your school's subscription order and payment history
+icon: History
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+
+The **Order History** page provides a complete record of all subscription transactions made by your school, including payment status, plan details, and dates.
+
+## Overview
+
+| Item | Description |
+|------|-------------|
+| **Purpose** | View past subscription orders and payment records |
+| **Required Role** | School Admin |
+| **Route** | `/subscriptions/history` |
+
+---
+
+## Reading the Order History
+
+The order history table includes:
+
+| Column | Description |
+|--------|-------------|
+| **Order ID** | Unique transaction reference |
+| **Plan Name** | The subscription package purchased |
+| **Amount** | Payment amount for the subscription |
+| **Start Date** | When the subscription became active |
+| **End Date** | When the subscription will expire |
+| **Status** | `Active`, `Expired`, `Cancelled`, or `Pending` |
+| **Payment Method** | Payment gateway used |
+
+---
+
+## Common Status Values
+
+| Status | Meaning |
+|--------|---------|
+| ✅ **Active** | Subscription is currently valid and all features are unlocked |
+| ⏰ **Expired** | Subscription period has ended |
+| ❌ **Cancelled** | Subscription was cancelled before the end date |
+| ⏳ **Pending** | Payment is being processed |
+
+---
+
+<Callout type="info">
+  If you believe a payment was successful but the subscription shows as **Pending**, wait a few minutes and refresh. Contact support if the issue persists after 30 minutes.
+</Callout>
+
+---
+
+## Downloading Invoices
+
+Some payment gateways provide invoice downloads directly from the payment confirmation email. For official invoices or receipts, contact the system administrator.

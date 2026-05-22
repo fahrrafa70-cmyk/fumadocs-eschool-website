@@ -1,0 +1,66 @@
+---
+title: KPK Settings
+description: Configure vocational program departments (KPK) for the school
+icon: Settings2
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Steps, Step } from 'fumadocs-ui/components/steps';
+
+The **KPK Settings** page allows School Admins to set up and manage vocational program departments (Kepala Program Kejuruan) in the school. These departments appear in the KPK module as separate document management areas.
+
+## Overview
+
+| Item | Description |
+|------|-------------|
+| **Purpose** | Add and configure vocational program departments |
+| **Required Role** | School Admin |
+| **Route** | `/kpk` (Settings) |
+
+---
+
+## What is KPK?
+
+In Indonesian vocational high schools (SMK), **KPK (Kepala Program Kejuruan)** refers to the department heads of each vocational specialty. Each program/department (e.g., Computer Networking, Software Engineering) has its own head who manages department-specific documents.
+
+---
+
+## Adding a KPK Department
+
+<Steps>
+  <Step>
+    Navigate to **Settings → KPK Settings**
+  </Step>
+  <Step>
+    Click **Add Department**
+  </Step>
+  <Step>
+    Enter the department details:
+    - **Department Name** (e.g., "Teknik Komputer dan Jaringan")
+    - **Abbreviation** (e.g., "TKJ")
+    - **Department Head** – Select from existing staff
+  </Step>
+  <Step>
+    Click **Save** to create the department
+  </Step>
+</Steps>
+
+---
+
+## Assigning Document Access
+
+Once a department is created, the assigned department head will automatically gain access to their KPK document folder.
+
+<Callout type="info">
+  The department head's access is linked to their user account via the `dokumen-kpk` permission. Ensure the staff member has this permission assigned in their role.
+</Callout>
+
+---
+
+## Managing Departments
+
+| Action | Description |
+|--------|-------------|
+| **Edit** | Update department name, abbreviation, or head |
+| **Delete** | Remove a department (existing documents in the folder will be archived) |
+| **View** | Preview the document folder for a department |

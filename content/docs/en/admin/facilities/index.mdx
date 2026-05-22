@@ -1,0 +1,25 @@
+---
+title: Facilities & Infrastructure (Sarpras)
+description: School facilities and infrastructure document management
+icon: Building2
+---
+
+import { Cards, Card } from 'fumadocs-ui/components/card';
+import { FolderOpen, ChevronRight } from 'lucide-react';
+
+The **Facilities & Infrastructure (Sarpras)** module is the digital hub for managing school facilities-related documents. It covers building assets, infrastructure maintenance records, procurement documents, and facility usage data.
+
+<Cards>
+  <Card
+    title={
+      <div className="flex items-center justify-between w-full">
+        <div className="flex items-center gap-2">
+          <FolderOpen className="h-5 w-5 text-fd-primary" />
+          <span>Facilities Documents</span>
+        </div>
+        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
+      </div>
+    }
+    href="/en/docs/admin/facilities/documents"
+  />
+</Cards>

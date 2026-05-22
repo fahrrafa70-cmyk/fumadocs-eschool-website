@@ -1,0 +1,25 @@
+---
+title: Perpustakaan
+description: Manajemen dokumen dan sumber daya perpustakaan sekolah
+icon: BookMarked
+---
+
+import { Cards, Card } from 'fumadocs-ui/components/card';
+import { FolderOpen, ChevronRight } from 'lucide-react';
+
+Modul **Perpustakaan** menyediakan ruang khusus untuk mengelola dan berbagi dokumen perpustakaan, sumber daya, dan materi digital yang dapat diakses oleh siswa dan guru.
+
+<Cards>
+  <Card
+    title={
+      <div className="flex items-center justify-between w-full">
+        <div className="flex items-center gap-2">
+          <FolderOpen className="h-5 w-5 text-fd-primary" />
+          <span>Dokumen Perpustakaan</span>
+        </div>
+        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
+      </div>
+    }
+    href="/id/docs/admin/perpustakaan/dokumen"
+  />
+</Cards>

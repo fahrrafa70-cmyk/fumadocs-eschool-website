@@ -1,0 +1,58 @@
+---
+title: Pengaturan Absensi
+description: Konfigurasi aturan absensi, poin pelanggaran, dan pengaturan kehadiran
+icon: ClipboardList
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Steps, Step } from 'fumadocs-ui/components/steps';
+
+Halaman **Pengaturan Absensi** memungkinkan Admin Sekolah untuk mengonfigurasi cara sistem absensi bekerja, termasuk aturan pengurangan poin, pengaturan hari kerja, dan ambang batas notifikasi.
+
+## Ringkasan
+
+| Item | Keterangan |
+|------|------------|
+| **Tujuan** | Mengonfigurasi aturan dan parameter pelacakan absensi |
+| **Peran yang Diperlukan** | Admin Sekolah |
+| **Rute** | `/setting` (Pengaturan Absensi) |
+
+---
+
+## Opsi Konfigurasi Utama
+
+### Hari Sekolah
+
+Konfigurasikan hari-hari mana dalam seminggu yang dianggap sebagai hari sekolah/kerja:
+
+<Steps>
+  <Step>
+    Buka **Pengaturan → Pengaturan Absensi**
+  </Step>
+  <Step>
+    Pilih hari sekolah aktif (misalnya Senin-Jumat, atau Senin-Sabtu)
+  </Step>
+  <Step>
+    Simpan konfigurasi
+  </Step>
+</Steps>
+
+---
+
+### Sistem Poin Absensi
+
+Sistem ini mendukung pelacakan absensi berbasis poin untuk pelanggaran siswa:
+
+| Pengaturan | Keterangan |
+|------------|------------|
+| **Alpha (Tidak Hadir Tanpa Izin)** | Poin yang dikurangi untuk ketidakhadiran tanpa keterangan |
+| **Terlambat** | Poin yang dikurangi untuk keterlambatan |
+| **Sakit** | Penanganan poin untuk absensi sakit |
+| **Izin** | Penanganan poin untuk izin yang disetujui |
+| **Ambang Batas** | Ambang minimum poin sebelum peringatan dipicu |
+
+---
+
+<Callout type="info">
+  Pengaturan absensi berlaku untuk **seluruh sekolah**. Perubahan akan mempengaruhi cara semua catatan absensi dihitung ke depannya. Periksa pengaturan ini dengan teliti sebelum mengubahnya.
+</Callout>

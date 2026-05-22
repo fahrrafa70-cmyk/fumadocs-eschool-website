@@ -1,0 +1,65 @@
+---
+title: Beginning Balance
+description: Set up the school's opening financial balance for the current period
+icon: Wallet
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Steps, Step } from 'fumadocs-ui/components/steps';
+
+The **Beginning Balance (Saldo Awal)** feature allows School Admins to set an initial financial balance for the school's treasury. This is typically used at the start of a new academic year or when first setting up the financial module.
+
+## Overview
+
+| Item | Description |
+|------|-------------|
+| **Purpose** | Set the opening balance for the school's financial records |
+| **Required Role** | School Admin |
+| **Route** | `/beginning-balance` |
+
+---
+
+## Why It Matters
+
+The Beginning Balance acts as a starting point for all financial calculations in eSchool. It:
+- Provides an accurate baseline for financial reporting
+- Ensures the Finance Dashboard correctly reflects the school's actual financial position
+- Allows the system to track cash flow from a known starting point
+
+---
+
+## Setting the Beginning Balance
+
+<Steps>
+  <Step>
+    Navigate to **Settings → Beginning Balance** from the sidebar
+  </Step>
+  <Step>
+    Enter the **Opening Balance Amount** for the current period
+  </Step>
+  <Step>
+    Select the **Effective Date** (the date from which this balance applies)
+  </Step>
+  <Step>
+    Add a **Description** or note for reference (e.g., "Opening balance FY 2024/2025")
+  </Step>
+  <Step>
+    Click **Save** to confirm
+  </Step>
+</Steps>
+
+---
+
+<Callout type="warning">
+  **Important:** The beginning balance should only be set once per accounting period. Changing it mid-period can cause discrepancies in financial reports. Consult your school treasurer before modifying this value.
+</Callout>
+
+---
+
+## Effect on Financial Reports
+
+| Report | Impact of Beginning Balance |
+|--------|-----------------------------|
+| **Finance Dashboard** | Total cash position includes the beginning balance |
+| **Income vs Expense Summary** | Starting point for net cash calculation |
+| **Period Reports** | Balance sheets will include the opening balance |

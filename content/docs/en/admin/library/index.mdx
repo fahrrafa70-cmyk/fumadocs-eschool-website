@@ -1,0 +1,25 @@
+---
+title: Library
+description: School library document and resource management
+icon: BookMarked
+---
+
+import { Cards, Card } from 'fumadocs-ui/components/card';
+import { FolderOpen, ChevronRight } from 'lucide-react';
+
+The **Library (Perpustakaan)** module provides a dedicated space for managing and sharing library-related documents, resources, and digital materials accessible to students and teachers.
+
+<Cards>
+  <Card
+    title={
+      <div className="flex items-center justify-between w-full">
+        <div className="flex items-center gap-2">
+          <FolderOpen className="h-5 w-5 text-fd-primary" />
+          <span>Library Documents</span>
+        </div>
+        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
+      </div>
+    }
+    href="/en/docs/admin/library/documents"
+  />
+</Cards>

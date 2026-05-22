@@ -1,0 +1,46 @@
+---
+title: Saldo Awal
+description: Tetapkan saldo keuangan awal sekolah untuk periode berjalan
+icon: Wallet
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Steps, Step } from 'fumadocs-ui/components/steps';
+
+Fitur **Saldo Awal** memungkinkan Admin Sekolah untuk menetapkan saldo keuangan awal bendahara sekolah. Ini biasanya digunakan pada awal tahun ajaran baru atau saat pertama kali menyiapkan modul keuangan.
+
+## Ringkasan
+
+| Item | Keterangan |
+|------|------------|
+| **Tujuan** | Menetapkan saldo awal untuk catatan keuangan sekolah |
+| **Peran yang Diperlukan** | Admin Sekolah |
+| **Rute** | `/beginning-balance` |
+
+---
+
+## Mengatur Saldo Awal
+
+<Steps>
+  <Step>
+    Buka **Pengaturan → Saldo Awal** dari sidebar
+  </Step>
+  <Step>
+    Masukkan **Jumlah Saldo Pembuka** untuk periode berjalan
+  </Step>
+  <Step>
+    Pilih **Tanggal Efektif** (tanggal mulai berlakunya saldo ini)
+  </Step>
+  <Step>
+    Tambahkan **Deskripsi** atau catatan untuk referensi (contoh: "Saldo awal TA 2024/2025")
+  </Step>
+  <Step>
+    Klik **Simpan** untuk mengkonfirmasi
+  </Step>
+</Steps>
+
+---
+
+<Callout type="warning">
+  **Penting:** Saldo awal sebaiknya hanya ditetapkan sekali per periode akuntansi. Mengubahnya di tengah periode dapat menyebabkan ketidaksesuaian dalam laporan keuangan. Konsultasikan dengan bendahara sekolah sebelum mengubah nilai ini.
+</Callout>

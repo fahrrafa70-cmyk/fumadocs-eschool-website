@@ -1,0 +1,9 @@
+{
+    "title": "Langganan",
+    "icon": "CreditCard",
+    "pages": [
+        "paket",
+        "riwayat-pesanan",
+        "addon"
+    ]
+}

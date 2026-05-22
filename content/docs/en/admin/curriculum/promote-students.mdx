@@ -1,0 +1,64 @@
+---
+title: Promote / Change Class
+description: Move students to a new class or grade level at the end of an academic period
+icon: MoveRight
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Steps, Step } from 'fumadocs-ui/components/steps';
+
+The **Promote / Change Class** feature allows school administrators to move students from one class to another — typically used at the end of an academic year to promote students to the next grade level.
+
+## Overview
+
+| Item | Description |
+|------|-------------|
+| **Purpose** | Promote or transfer students between classes |
+| **Required Permission** | `promote-student-create` |
+| **Route** | `/promote-student` |
+
+---
+
+## How to Promote Students
+
+<Steps>
+  <Step>
+    Navigate to **Curriculum → Change Class**
+  </Step>
+  <Step>
+    Select the **current class** (source class) from which students will be moved
+  </Step>
+  <Step>
+    Select the **target class** where students will be promoted to
+  </Step>
+  <Step>
+    Select the students you want to promote (you can select all or individual students)
+  </Step>
+  <Step>
+    Click **Promote** to confirm the class change
+  </Step>
+</Steps>
+
+---
+
+## Use Cases
+
+| Scenario | Description |
+|----------|-------------|
+| **Year-End Promotion** | Move all students from Grade 10 to Grade 11 at the end of the school year |
+| **Individual Transfer** | Move a single student to a different section within the same grade |
+| **Remedial Placement** | Move a student back to repeat a grade level |
+
+---
+
+<Callout type="warning">
+  **Before promoting students**, make sure the target class has sufficient capacity and the new academic year's session is already set up in the system.
+</Callout>
+
+---
+
+## Notes
+
+- Promotion does **not** delete historical data from the previous class; all grades, attendance, and records remain linked to the student's history
+- If a student is promoted incorrectly, contact the system administrator to reverse the action
+- The **Change Class** function also handles **stream transfers** (e.g., moving from IPA to IPS in Indonesian high schools)

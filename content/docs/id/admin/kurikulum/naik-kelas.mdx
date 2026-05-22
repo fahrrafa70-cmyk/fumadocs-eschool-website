@@ -1,0 +1,63 @@
+---
+title: Naik Kelas / Pindah Kelas
+description: Pindahkan siswa ke kelas atau tingkat baru di akhir periode akademik
+icon: MoveRight
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Steps, Step } from 'fumadocs-ui/components/steps';
+
+Fitur **Naik Kelas / Pindah Kelas** memungkinkan administrator sekolah untuk memindahkan siswa dari satu kelas ke kelas lain — biasanya digunakan di akhir tahun ajaran untuk menaikkan siswa ke tingkat berikutnya.
+
+## Ringkasan
+
+| Item | Keterangan |
+|------|------------|
+| **Tujuan** | Menaikkan atau memindahkan siswa antar kelas |
+| **Izin yang Diperlukan** | `promote-student-create` |
+| **Rute** | `/promote-student` |
+
+---
+
+## Cara Menaikkan Kelas Siswa
+
+<Steps>
+  <Step>
+    Buka **Kurikulum → Pindah Kelas**
+  </Step>
+  <Step>
+    Pilih **kelas saat ini** (kelas asal) dari mana siswa akan dipindahkan
+  </Step>
+  <Step>
+    Pilih **kelas tujuan** tempat siswa akan dipindahkan
+  </Step>
+  <Step>
+    Pilih siswa yang ingin dipindahkan (bisa pilih semua atau siswa tertentu)
+  </Step>
+  <Step>
+    Klik **Pindahkan** untuk mengkonfirmasi perpindahan kelas
+  </Step>
+</Steps>
+
+---
+
+## Kasus Penggunaan
+
+| Skenario | Keterangan |
+|----------|------------|
+| **Kenaikan Kelas Akhir Tahun** | Pindahkan semua siswa dari Kelas X ke Kelas XI di akhir tahun ajaran |
+| **Pindah Individu** | Pindahkan satu siswa ke seksi berbeda dalam tingkat yang sama |
+| **Pindah ke Kelas Remedial** | Pertahankan siswa di tingkat kelas yang sama |
+
+---
+
+<Callout type="warning">
+  **Sebelum menaikkan kelas siswa**, pastikan kelas tujuan memiliki kapasitas yang cukup dan tahun ajaran baru sudah disiapkan di sistem.
+</Callout>
+
+---
+
+## Catatan
+
+- Perpindahan kelas **tidak** menghapus data historis dari kelas sebelumnya; semua nilai, absensi, dan catatan tetap terhubung dengan riwayat siswa
+- Jika siswa dipindahkan secara tidak sengaja, hubungi administrator sistem untuk membatalkan tindakan tersebut

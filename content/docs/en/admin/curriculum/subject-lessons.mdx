@@ -1,0 +1,91 @@
+---
+title: Subject Lessons (Chapters & Topics)
+description: Manage chapters and topics for each subject in the curriculum
+icon: BookMarked
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Steps, Step } from 'fumadocs-ui/components/steps';
+import { Tabs, Tab } from 'fumadocs-ui/components/tabs';
+
+The **Subject Lessons** feature allows teachers and curriculum managers to organize learning content into structured **Chapters** (Lessons) and **Topics** within each subject.
+
+## Overview
+
+| Item | Description |
+|------|-------------|
+| **Chapters (Lessons)** | High-level groupings of learning material within a subject |
+| **Topics** | Specific learning units within a chapter |
+| **Access** | Teachers with `lesson-list` or `topic-list` permission |
+
+---
+
+## Managing Chapters
+
+<Steps>
+  <Step>
+    Navigate to **Curriculum → Subject Lessons → Create Chapter**
+  </Step>
+  <Step>
+    Click **Add Chapter** to create a new chapter
+  </Step>
+  <Step>
+    Fill in the chapter details:
+    - **Chapter Name** – Name of the learning chapter
+    - **Subject** – Select the related subject
+    - **Class** – Assign the chapter to a specific class
+    - **Description** – Brief description of the chapter content
+  </Step>
+  <Step>
+    Click **Save** to create the chapter
+  </Step>
+</Steps>
+
+### Chapter List
+
+The chapter list displays all chapters across subjects. You can:
+- **Edit** a chapter's name or description
+- **Delete** a chapter (note: this will also remove all associated topics)
+- **Filter** chapters by subject or class
+
+---
+
+## Managing Topics
+
+Topics are the individual learning units inside a chapter.
+
+<Steps>
+  <Step>
+    Navigate to **Curriculum → Subject Lessons → Create Topic**
+  </Step>
+  <Step>
+    Click **Add Topic**
+  </Step>
+  <Step>
+    Fill in the topic details:
+    - **Topic Name** – Name of the specific topic
+    - **Chapter** – Select the parent chapter
+    - **Description** – What students will learn in this topic
+  </Step>
+  <Step>
+    Click **Save** to create the topic
+  </Step>
+</Steps>
+
+---
+
+## Teacher Access
+
+<Callout type="info">
+  Teachers can only view and manage chapters/topics for subjects they are assigned to teach. Curriculum Admins can manage all subjects.
+</Callout>
+
+Teachers with lesson permissions can access Subject Lessons from their **Teacher Dashboard → My Lesson** quick link.
+
+---
+
+## Tips
+
+- Create chapters before adding topics, as topics must belong to a chapter
+- Use descriptive chapter names that align with the official syllabus
+- Topics should reflect individual lesson plans or sessions

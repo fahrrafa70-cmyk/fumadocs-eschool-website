@@ -1,0 +1,91 @@
+---
+title: Subscription Plans
+description: View and upgrade your school's eSchool subscription plan
+icon: CreditCard
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Steps, Step } from 'fumadocs-ui/components/steps';
+
+The **Subscription Plans** page lets School Admins view available packages and subscribe or upgrade their school's eSchool plan.
+
+## Overview
+
+| Item | Description |
+|------|-------------|
+| **Purpose** | Browse and purchase a subscription plan |
+| **Required Role** | School Admin |
+| **Route** | `/subscriptions` |
+
+---
+
+## Trial Mode
+
+When a new school is registered, it begins with a **Trial Mode** that provides limited access to eSchool features. The trial includes:
+
+- A set number of trial days (typically 30 days)
+- Access to core features only (Students, Teachers, Attendance, Basic Settings)
+- Visual lock indicators (🔒) on premium features
+
+<Callout type="warning">
+  Once the trial expires, all premium features will be locked until a paid subscription is activated.
+</Callout>
+
+---
+
+## Subscribing to a Plan
+
+<Steps>
+  <Step>
+    Navigate to **Subscription** from the sidebar
+  </Step>
+  <Step>
+    Browse the available packages and their included features
+  </Step>
+  <Step>
+    Click **Subscribe** on your preferred plan
+  </Step>
+  <Step>
+    Complete the payment via the configured payment gateway (Xendit, Stripe, Razorpay)
+  </Step>
+  <Step>
+    After successful payment, all features in your plan will be automatically unlocked
+  </Step>
+</Steps>
+
+---
+
+## Plan Features
+
+Different plans unlock different feature sets. Common features that become available in paid plans include:
+
+| Feature Category | Examples |
+|------------------|---------|
+| **Finance** | Payroll, Expense Management, Fees Management |
+| **Academic** | Online Exams, Assignment Management, Timetable |
+| **Communication** | Announcements, Gallery, Push Notifications |
+| **Administration** | Staff Leave, HRD Module, KPK Documents |
+| **Reports** | Advanced attendance reports, Financial reports |
+
+---
+
+## Payment Processing
+
+<Callout type="info">
+  Payment is processed through your school's configured payment gateway. Contact the Super Admin if payment options need to be set up first.
+</Callout>
+
+After a successful payment:
+1. Your subscription is automatically activated
+2. School status is updated to **Active**
+3. All features in your plan are immediately unlocked
+4. A confirmation email is sent to the registered school email
+
+---
+
+## Subscription Renewal
+
+Subscriptions are time-limited. Before expiry:
+- You will see renewal reminders in the sidebar banner
+- Visit the Subscription page to renew your plan
+- Renewal uses the same payment process as the initial subscription

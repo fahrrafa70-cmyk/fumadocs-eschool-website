@@ -1,0 +1,34 @@
+---
+title: Riwayat Pesanan
+description: Lihat riwayat pesanan dan pembayaran langganan sekolah Anda
+icon: History
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+
+Halaman **Riwayat Pesanan** menyediakan catatan lengkap semua transaksi langganan yang dilakukan sekolah Anda, termasuk status pembayaran, detail paket, dan tanggal.
+
+## Ringkasan
+
+| Item | Keterangan |
+|------|------------|
+| **Tujuan** | Lihat pesanan langganan dan catatan pembayaran masa lalu |
+| **Peran yang Diperlukan** | Admin Sekolah |
+| **Rute** | `/subscriptions/history` |
+
+---
+
+## Status Umum
+
+| Status | Makna |
+|--------|-------|
+| ✅ **Aktif** | Langganan saat ini valid dan semua fitur terbuka |
+| ⏰ **Kedaluwarsa** | Periode langganan telah berakhir |
+| ❌ **Dibatalkan** | Langganan dibatalkan sebelum tanggal akhir |
+| ⏳ **Menunggu** | Pembayaran sedang diproses |
+
+---
+
+<Callout type="info">
+  Jika pembayaran berhasil tetapi langganan masih berstatus **Menunggu**, tunggu beberapa menit dan muat ulang halaman. Hubungi dukungan jika masalah masih berlanjut setelah 30 menit.
+</Callout>

@@ -1,0 +1,81 @@
+---
+title: Payroll Settings
+description: Configure salary components, allowances, and deductions for payroll
+icon: BanknoteIcon
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Steps, Step } from 'fumadocs-ui/components/steps';
+
+The **Payroll Settings** page allows School Admins to configure the components, allowances, and deductions used in the staff payroll calculation.
+
+## Overview
+
+| Item | Description |
+|------|-------------|
+| **Purpose** | Configure salary components for payroll generation |
+| **Required Permission** | `payroll-settings-list` |
+| **Route** | `/payroll-setting` |
+
+---
+
+## Payroll Components
+
+The payroll system uses configurable components to calculate staff salaries. Common component types include:
+
+| Component Type | Examples |
+|----------------|---------|
+| **Basic Salary** | Fixed monthly base pay |
+| **Allowances** | Transport allowance, meal allowance, housing allowance |
+| **Deductions** | BPJS/insurance contributions, tax deductions, pension |
+| **Bonuses** | Performance bonuses, holiday bonuses (THR) |
+| **Overtime** | Hourly overtime rates |
+
+---
+
+## Adding a Payroll Component
+
+<Steps>
+  <Step>
+    Navigate to **Settings → Payroll Settings**
+  </Step>
+  <Step>
+    Click **Add Component**
+  </Step>
+  <Step>
+    Enter the component details:
+    - **Component Name** (e.g., "Transport Allowance")
+    - **Type**: `Addition` (allowance) or `Deduction`
+    - **Amount Type**: Fixed amount or Percentage
+    - **Amount/Percentage**: The value to apply
+  </Step>
+  <Step>
+    Click **Save** to add the component
+  </Step>
+</Steps>
+
+---
+
+## Editing & Deleting Components
+
+<Callout type="warning">
+  Modifying payroll components will affect all future payroll calculations. Ensure changes are reviewed by the treasurer before saving. Past payroll records will not be retroactively changed.
+</Callout>
+
+- **Edit**: Click the edit icon next to a component to modify its value
+- **Delete**: Click the delete icon to remove a component
+
+---
+
+## Applying Components to Staff
+
+Once payroll components are configured in settings, they can be applied to individual staff members when generating payroll through **Finance → Payroll → Generate Payroll**.
+
+---
+
+## Payroll Period
+
+Payroll is generated monthly. Ensure all attendance records are finalized before running payroll for the month, as attendance may affect:
+- Deductions for absences
+- Attendance-based allowances
+- Overtime calculations

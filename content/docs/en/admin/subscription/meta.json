@@ -1,0 +1,9 @@
+{
+    "title": "Subscription",
+    "icon": "CreditCard",
+    "pages": [
+        "plans",
+        "order-history",
+        "addons"
+    ]
+}

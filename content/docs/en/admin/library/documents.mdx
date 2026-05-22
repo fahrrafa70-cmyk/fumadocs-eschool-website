@@ -1,0 +1,86 @@
+---
+title: Library Documents
+description: Manage and access digital documents in the school library
+icon: FolderOpen
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Steps, Step } from 'fumadocs-ui/components/steps';
+
+The **Library Documents** feature provides a digital filing system for the school library. Staff can upload, organize, and share documents including e-books, reference materials, reading lists, and institutional resources.
+
+## Overview
+
+| Item | Description |
+|------|-------------|
+| **Purpose** | Store and manage library-related digital documents |
+| **Required Permission** | `dokumen-perpus` |
+| **Route** | `/perpusfolder` |
+
+---
+
+## Accessing Library Documents
+
+<Steps>
+  <Step>
+    Navigate to **Library** from the main sidebar
+  </Step>
+  <Step>
+    You will see a **folder-based file manager** where documents are organized in directories
+  </Step>
+  <Step>
+    Click on any folder to browse its contents
+  </Step>
+</Steps>
+
+---
+
+## Uploading Documents
+
+<Steps>
+  <Step>
+    Open the target folder where you want to upload the document
+  </Step>
+  <Step>
+    Click **Upload** or drag and drop files into the folder area
+  </Step>
+  <Step>
+    Supported file types include: PDF, Word (.docx), Excel (.xlsx), images, and more
+  </Step>
+  <Step>
+    After uploading, the document will appear in the folder and be accessible to authorized users
+  </Step>
+</Steps>
+
+---
+
+## Creating Folders
+
+<Steps>
+  <Step>
+    Click **New Folder** in the current directory
+  </Step>
+  <Step>
+    Enter a descriptive folder name (e.g., "Reference Books 2024", "Student Reading List")
+  </Step>
+  <Step>
+    Click **Create** to save the folder
+  </Step>
+</Steps>
+
+---
+
+## Access Control
+
+<Callout type="info">
+  Access to Library Documents is controlled by the `dokumen-perpus` permission. Only users (Staff/Librarians) assigned this permission can view and manage library documents.
+</Callout>
+
+---
+
+## Best Practices
+
+- Organize documents into clearly named folders by category (e.g., Science, Literature, Reference)
+- Use consistent file naming conventions for easy searching
+- Archive outdated materials by moving them to an "Archive" subfolder rather than deleting them
+- Regularly review and update the document library to keep content relevant

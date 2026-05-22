@@ -1,0 +1,83 @@
+---
+title: Database Backup
+description: Create and manage database backups for your school's eSchool data
+icon: Database
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Steps, Step } from 'fumadocs-ui/components/steps';
+
+The **Database Backup** feature allows Super Admins to create, download, and manage backups of the entire eSchool database to protect school data from loss.
+
+## Overview
+
+| Item | Description |
+|------|-------------|
+| **Purpose** | Back up and restore eSchool database |
+| **Required Role** | Super Admin only |
+| **Route** | `/database-backup` |
+
+---
+
+<Callout type="warning">
+  **Super Admin Access Only.** This feature is restricted to Super Admin accounts. School Admins cannot access database backup functionality.
+</Callout>
+
+---
+
+## Creating a Backup
+
+<Steps>
+  <Step>
+    Log in as **Super Admin** and navigate to **Database Backup** from the sidebar
+  </Step>
+  <Step>
+    Click **Create Backup** to initiate a new database snapshot
+  </Step>
+  <Step>
+    Wait for the backup process to complete (this may take a few moments depending on database size)
+  </Step>
+  <Step>
+    Once complete, the backup will appear in the backup list with a timestamp
+  </Step>
+</Steps>
+
+---
+
+## Downloading a Backup
+
+<Steps>
+  <Step>
+    On the Database Backup page, locate the backup you wish to download
+  </Step>
+  <Step>
+    Click the **Download** button next to the backup file
+  </Step>
+  <Step>
+    Save the backup file in a secure, off-site location
+  </Step>
+</Steps>
+
+---
+
+## Best Practices
+
+<Callout type="info">
+  We strongly recommend creating regular backups, especially before:
+  - Performing system updates or upgrades
+  - Running bulk data imports
+  - Making major configuration changes
+</Callout>
+
+| Recommendation | Details |
+|----------------|---------|
+| **Frequency** | At minimum weekly, ideally daily for active schools |
+| **Storage** | Store copies in at least 2 different locations |
+| **Testing** | Periodically test restoring from a backup to verify integrity |
+| **Retention** | Keep at least 3-4 recent backups before deleting older ones |
+
+---
+
+## Backup File Format
+
+Database backups are typically exported as SQL files (`.sql`) which contain all the data and schema for the eSchool system. These files can be used to restore the database if needed.

@@ -21,6 +21,8 @@ import {
   Calendar,
   ClipboardList,
   Globe,
+  BookMarked,
+  Layers,
   ChevronRight 
 } from 'lucide-react';
 
@@ -77,6 +79,18 @@ import {
     title={
       <div className="flex items-center justify-between w-full">
         <div className="flex items-center gap-2">
+          <Layers className="h-5 w-5 text-fd-primary" />
+          <span>Grade Levels</span>
+        </div>
+        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
+      </div>
+    }
+    href="/en/docs/admin/curriculum/grade-levels"
+  />
+  <Card
+    title={
+      <div className="flex items-center justify-between w-full">
+        <div className="flex items-center gap-2">
           <School className="h-5 w-5 text-fd-primary" />
           <span>Classes</span>
         </div>
@@ -125,6 +139,18 @@ import {
     title={
       <div className="flex items-center justify-between w-full">
         <div className="flex items-center gap-2">
+          <BookMarked className="h-5 w-5 text-fd-primary" />
+          <span>Subject Lessons</span>
+        </div>
+        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
+      </div>
+    }
+    href="/en/docs/admin/curriculum/subject-lessons"
+  />
+  <Card
+    title={
+      <div className="flex items-center justify-between w-full">
+        <div className="flex items-center gap-2">
           <MoveRight className="h-5 w-5 text-fd-primary" />
           <span>Class X Transfer</span>
         </div>
@@ -132,6 +158,18 @@ import {
       </div>
     }
     href="/en/docs/admin/curriculum/transfer-class-x"
+  />
+  <Card
+    title={
+      <div className="flex items-center justify-between w-full">
+        <div className="flex items-center gap-2">
+          <MoveRight className="h-5 w-5 text-fd-primary" />
+          <span>Promote / Change Class</span>
+        </div>
+        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
+      </div>
+    }
+    href="/en/docs/admin/curriculum/promote-students"
   />
   <Card
     title={

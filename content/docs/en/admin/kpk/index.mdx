@@ -1,0 +1,25 @@
+---
+title: KPK (Vocational Program Head)
+description: Document management for Vocational Program department heads
+icon: Archive
+---
+
+import { Cards, Card } from 'fumadocs-ui/components/card';
+import { FolderOpen, ChevronRight } from 'lucide-react';
+
+The **KPK (Kepala Program Kejuruan)** module is a dedicated document management portal for heads of vocational programs (program departments) in vocational high schools (SMK). It provides each department head with their own document repository.
+
+<Cards>
+  <Card
+    title={
+      <div className="flex items-center justify-between w-full">
+        <div className="flex items-center gap-2">
+          <FolderOpen className="h-5 w-5 text-fd-primary" />
+          <span>KPK Documents</span>
+        </div>
+        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
+      </div>
+    }
+    href="/en/docs/admin/kpk/documents"
+  />
+</Cards>

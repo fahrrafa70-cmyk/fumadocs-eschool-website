@@ -5,7 +5,7 @@ icon: Settings
 ---
 
 import { Cards, Card } from 'fumadocs-ui/components/card';
-import { School, Undo2, Settings2, CalendarCog, Calendar, Mail, FileCheck, FileText, ShieldCheck, CircleHelp, ChevronRight } from 'lucide-react';
+import { School, Undo2, Settings2, CalendarCog, Calendar, Mail, FileCheck, FileText, ShieldCheck, CircleHelp, ClipboardList, BanknoteIcon, Wallet, SlidersHorizontal, Database, ChevronRight } from 'lucide-react';
 
 <Cards>
   <Card
@@ -115,6 +115,66 @@ import { School, Undo2, Settings2, CalendarCog, Calendar, Mail, FileCheck, FileT
       </div>
     }
     href="/en/docs/admin/settings/privacy-policy"
+  />
+  <Card
+    title={
+      <div className="flex items-center justify-between w-full">
+        <div className="flex items-center gap-2">
+          <ClipboardList className="h-5 w-5 text-fd-primary" />
+          <span>Attendance Settings</span>
+        </div>
+        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
+      </div>
+    }
+    href="/en/docs/admin/settings/attendance-settings"
+  />
+  <Card
+    title={
+      <div className="flex items-center justify-between w-full">
+        <div className="flex items-center gap-2">
+          <BanknoteIcon className="h-5 w-5 text-fd-primary" />
+          <span>Payroll Settings</span>
+        </div>
+        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
+      </div>
+    }
+    href="/en/docs/admin/settings/payroll-settings"
+  />
+  <Card
+    title={
+      <div className="flex items-center justify-between w-full">
+        <div className="flex items-center gap-2">
+          <Wallet className="h-5 w-5 text-fd-primary" />
+          <span>Beginning Balance</span>
+        </div>
+        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
+      </div>
+    }
+    href="/en/docs/admin/settings/beginning-balance"
+  />
+  <Card
+    title={
+      <div className="flex items-center justify-between w-full">
+        <div className="flex items-center gap-2">
+          <SlidersHorizontal className="h-5 w-5 text-fd-primary" />
+          <span>KPK Settings</span>
+        </div>
+        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
+      </div>
+    }
+    href="/en/docs/admin/settings/kpk-settings"
+  />
+  <Card
+    title={
+      <div className="flex items-center justify-between w-full">
+        <div className="flex items-center gap-2">
+          <Database className="h-5 w-5 text-fd-primary" />
+          <span>Database Backup</span>
+        </div>
+        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
+      </div>
+    }
+    href="/en/docs/admin/settings/database-backup"
   />
   <Card
     title={

@@ -1,0 +1,59 @@
+---
+title: Pengaturan Penggajian
+description: Konfigurasi komponen gaji, tunjangan, dan potongan untuk penggajian
+icon: BanknoteIcon
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Steps, Step } from 'fumadocs-ui/components/steps';
+
+Halaman **Pengaturan Penggajian** memungkinkan Admin Sekolah untuk mengonfigurasi komponen, tunjangan, dan potongan yang digunakan dalam perhitungan gaji staf.
+
+## Ringkasan
+
+| Item | Keterangan |
+|------|------------|
+| **Tujuan** | Mengonfigurasi komponen gaji untuk pembuatan penggajian |
+| **Izin yang Diperlukan** | `payroll-settings-list` |
+| **Rute** | `/payroll-setting` |
+
+---
+
+## Komponen Penggajian
+
+| Tipe Komponen | Contoh |
+|---------------|--------|
+| **Gaji Pokok** | Gaji bulanan tetap |
+| **Tunjangan** | Tunjangan transport, makan, perumahan |
+| **Potongan** | BPJS, pajak, iuran pensiun |
+| **Bonus** | Bonus kinerja, THR |
+| **Lembur** | Tarif lembur per jam |
+
+---
+
+## Menambahkan Komponen Penggajian
+
+<Steps>
+  <Step>
+    Buka **Pengaturan → Pengaturan Penggajian**
+  </Step>
+  <Step>
+    Klik **Tambah Komponen**
+  </Step>
+  <Step>
+    Isi detail komponen:
+    - **Nama Komponen** (contoh: "Tunjangan Transport")
+    - **Tipe**: `Tambahan` (tunjangan) atau `Potongan`
+    - **Tipe Jumlah**: Jumlah tetap atau Persentase
+    - **Jumlah/Persentase**: Nilai yang diterapkan
+  </Step>
+  <Step>
+    Klik **Simpan** untuk menambahkan komponen
+  </Step>
+</Steps>
+
+---
+
+<Callout type="warning">
+  Mengubah komponen penggajian akan mempengaruhi semua perhitungan penggajian di masa mendatang. Pastikan perubahan dikaji oleh bendahara sebelum disimpan. Catatan penggajian masa lalu tidak akan berubah secara retroaktif.
+</Callout>

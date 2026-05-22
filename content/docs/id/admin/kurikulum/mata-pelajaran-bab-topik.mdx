@@ -1,0 +1,73 @@
+---
+title: Mata Pelajaran (Bab & Topik)
+description: Kelola bab dan topik untuk setiap mata pelajaran dalam kurikulum
+icon: BookMarked
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Steps, Step } from 'fumadocs-ui/components/steps';
+
+Fitur **Mata Pelajaran (Bab & Topik)** memungkinkan guru dan koordinator kurikulum untuk mengorganisasikan materi pembelajaran ke dalam **Bab** (Lesson) dan **Topik** yang terstruktur di setiap mata pelajaran.
+
+## Ringkasan
+
+| Item | Keterangan |
+|------|------------|
+| **Bab (Lesson)** | Pengelompokan materi pembelajaran utama dalam suatu mata pelajaran |
+| **Topik** | Unit pembelajaran spesifik di dalam sebuah bab |
+| **Akses** | Guru dengan izin `lesson-list` atau `topic-list` |
+
+---
+
+## Mengelola Bab
+
+<Steps>
+  <Step>
+    Buka **Kurikulum → Mata Pelajaran → Buat Bab**
+  </Step>
+  <Step>
+    Klik **Tambah Bab** untuk membuat bab baru
+  </Step>
+  <Step>
+    Isi detail bab:
+    - **Nama Bab** – Nama bab pembelajaran
+    - **Mata Pelajaran** – Pilih mata pelajaran terkait
+    - **Kelas** – Tentukan kelas yang menggunakan bab ini
+    - **Deskripsi** – Deskripsi singkat konten bab
+  </Step>
+  <Step>
+    Klik **Simpan** untuk membuat bab
+  </Step>
+</Steps>
+
+---
+
+## Mengelola Topik
+
+Topik adalah unit pembelajaran individual di dalam sebuah bab.
+
+<Steps>
+  <Step>
+    Buka **Kurikulum → Mata Pelajaran → Buat Topik**
+  </Step>
+  <Step>
+    Klik **Tambah Topik**
+  </Step>
+  <Step>
+    Isi detail topik:
+    - **Nama Topik** – Nama topik spesifik
+    - **Bab** – Pilih bab induk
+    - **Deskripsi** – Apa yang akan dipelajari siswa dalam topik ini
+  </Step>
+  <Step>
+    Klik **Simpan** untuk membuat topik
+  </Step>
+</Steps>
+
+---
+
+## Tips
+
+- Buat bab terlebih dahulu sebelum menambahkan topik, karena topik harus berada di dalam bab
+- Gunakan nama bab yang deskriptif sesuai dengan silabus resmi
+- Topik sebaiknya mencerminkan rencana pembelajaran atau sesi pembelajaran individual

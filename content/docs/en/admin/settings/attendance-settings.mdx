@@ -1,0 +1,83 @@
+---
+title: Attendance Settings
+description: Configure attendance rules, grading points, and absensi settings
+icon: ClipboardList
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Steps, Step } from 'fumadocs-ui/components/steps';
+
+The **Attendance Settings** page allows School Admins to configure how the attendance system works, including attendance point deduction rules, working days setup, and notification thresholds.
+
+## Overview
+
+| Item | Description |
+|------|-------------|
+| **Purpose** | Configure attendance tracking rules and parameters |
+| **Required Role** | School Admin |
+| **Route** | `/setting` (Attendance Settings) |
+
+---
+
+## Key Configuration Options
+
+### Attendance Days
+
+Configure which days of the week are considered school/working days:
+
+<Steps>
+  <Step>
+    Navigate to **Settings → Attendance Settings**
+  </Step>
+  <Step>
+    Select the active school days (e.g., Monday to Friday, or Monday to Saturday)
+  </Step>
+  <Step>
+    Save the configuration
+  </Step>
+</Steps>
+
+---
+
+### Attendance Points System
+
+The system supports a point-based attendance tracking for student violations:
+
+| Setting | Description |
+|---------|-------------|
+| **Alpha (Unexcused Absence)** | Points deducted for unexcused absences |
+| **Terlambat (Late)** | Points deducted for tardiness |
+| **Sakit (Sick)** | Points handling for medical absences |
+| **Izin (Permission)** | Points handling for permitted absences |
+| **Threshold** | Minimum point threshold before an alert is triggered |
+
+---
+
+### Notification Thresholds
+
+Configure when attendance alerts are automatically sent:
+
+| Alert Type | When Triggered |
+|------------|---------------|
+| **Low Attendance Warning** | Student attendance drops below X% |
+| **Absence Streak Alert** | Student is absent for N consecutive days |
+| **Point Violation** | Student reaches the point violation threshold |
+
+---
+
+<Callout type="info">
+  Attendance settings apply to the **entire school**. Changes will affect how all attendance records are calculated going forward. Review these settings carefully before modifying them.
+</Callout>
+
+---
+
+## Subject Attendance vs General Attendance
+
+eSchool tracks two types of attendance:
+
+| Type | Description |
+|------|-------------|
+| **General Daily Attendance** | Morning check-in for the whole school day |
+| **Per-Subject Attendance** | Attendance tracked separately for each class session (managed by teachers) |
+
+Both types can be configured through the Attendance Settings to work in coordination.

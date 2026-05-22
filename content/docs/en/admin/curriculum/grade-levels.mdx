@@ -1,0 +1,69 @@
+---
+title: Grade Levels
+description: Manage academic grade levels in the school curriculum
+icon: Layers
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Steps, Step } from 'fumadocs-ui/components/steps';
+
+**Grade Levels** define the academic progression structure in the school (e.g., Grade 10, 11, 12 for Senior High Schools). They are a prerequisite for creating Classes and managing student academic data.
+
+## Overview
+
+| Item | Description |
+|------|-------------|
+| **Purpose** | Define academic grade/year levels |
+| **Required Permission** | `grade-level-create` |
+| **Route** | `/grade-level` |
+
+---
+
+## Adding a Grade Level
+
+<Steps>
+  <Step>
+    Navigate to **Curriculum → Academics → Grade Level**
+  </Step>
+  <Step>
+    Click **Add Grade Level**
+  </Step>
+  <Step>
+    Enter the **Grade Level Name** (e.g., "Grade 10", "XI", "Class 3")
+  </Step>
+  <Step>
+    Click **Save** to create the grade level
+  </Step>
+</Steps>
+
+---
+
+## Editing & Deleting Grade Levels
+
+<Callout type="warning">
+  Deleting a grade level will affect all classes linked to it. Ensure no active classes are using the grade level before deleting.
+</Callout>
+
+- **Edit**: Click the edit (pencil) icon next to the grade level name to update it
+- **Delete**: Click the delete icon, then confirm the action
+
+---
+
+## Relationship to Other Modules
+
+Grade Levels are used across the system:
+
+| Module | Usage |
+|--------|-------|
+| **Classes** | Each class belongs to a specific grade level |
+| **Students** | Students are enrolled in classes tied to grade levels |
+| **Exam Results** | Results are organized by grade level |
+| **Timetable** | Schedules are structured per grade level |
+
+---
+
+## Best Practices
+
+- Create all grade levels before creating classes
+- Use consistent naming conventions (e.g., "Grade X" or Roman numerals)
+- For vocational schools (SMK), this typically matches with "Kelas X", "Kelas XI", "Kelas XII"

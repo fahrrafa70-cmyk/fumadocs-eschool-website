@@ -11,6 +11,11 @@
         "online-exam-terms-conditions",
         "terms-conditions",
         "privacy-policy",
+        "attendance-settings",
+        "payroll-settings",
+        "beginning-balance",
+        "kpk-settings",
+        "database-backup",
         "help"
     ]
 }

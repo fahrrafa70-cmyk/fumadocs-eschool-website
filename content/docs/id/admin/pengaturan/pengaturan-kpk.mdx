@@ -1,0 +1,36 @@
+---
+title: Pengaturan KPK
+description: Konfigurasi departemen program kejuruan (KPK) untuk sekolah
+icon: Settings2
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Steps, Step } from 'fumadocs-ui/components/steps';
+
+Halaman **Pengaturan KPK** memungkinkan Admin Sekolah untuk mengatur dan mengelola departemen program kejuruan (Kepala Program Kejuruan) di sekolah.
+
+## Menambahkan Departemen KPK
+
+<Steps>
+  <Step>
+    Buka **Pengaturan → Pengaturan KPK**
+  </Step>
+  <Step>
+    Klik **Tambah Departemen**
+  </Step>
+  <Step>
+    Isi detail departemen:
+    - **Nama Departemen** (contoh: "Teknik Komputer dan Jaringan")
+    - **Singkatan** (contoh: "TKJ")
+    - **Kepala Program** – Pilih dari daftar staf yang ada
+  </Step>
+  <Step>
+    Klik **Simpan** untuk membuat departemen
+  </Step>
+</Steps>
+
+---
+
+<Callout type="info">
+  Kepala program yang ditugaskan akan secara otomatis mendapatkan akses ke folder dokumen KPK mereka melalui izin `dokumen-kpk`.
+</Callout>

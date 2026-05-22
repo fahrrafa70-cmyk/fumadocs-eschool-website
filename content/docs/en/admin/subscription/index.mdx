@@ -1,0 +1,49 @@
+---
+title: Subscription
+description: Manage your school's eSchool subscription plan
+icon: CreditCard
+---
+
+import { Cards, Card } from 'fumadocs-ui/components/card';
+import { CreditCard, History, Puzzle, ChevronRight } from 'lucide-react';
+
+The **Subscription** module allows School Admins to view their current subscription plan, upgrade to a paid package, review their order history, and activate add-ons for additional features.
+
+<Cards>
+  <Card
+    title={
+      <div className="flex items-center justify-between w-full">
+        <div className="flex items-center gap-2">
+          <CreditCard className="h-5 w-5 text-fd-primary" />
+          <span>Subscription Plans</span>
+        </div>
+        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
+      </div>
+    }
+    href="/en/docs/admin/subscription/plans"
+  />
+  <Card
+    title={
+      <div className="flex items-center justify-between w-full">
+        <div className="flex items-center gap-2">
+          <History className="h-5 w-5 text-fd-primary" />
+          <span>Order History</span>
+        </div>
+        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
+      </div>
+    }
+    href="/en/docs/admin/subscription/order-history"
+  />
+  <Card
+    title={
+      <div className="flex items-center justify-between w-full">
+        <div className="flex items-center gap-2">
+          <Puzzle className="h-5 w-5 text-fd-primary" />
+          <span>Add-ons</span>
+        </div>
+        <ChevronRight className="h-4 w-4 text-fd-muted-foreground" />
+      </div>
+    }
+    href="/en/docs/admin/subscription/addons"
+  />
+</Cards>

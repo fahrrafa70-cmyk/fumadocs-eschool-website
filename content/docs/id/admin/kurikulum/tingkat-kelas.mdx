@@ -1,0 +1,56 @@
+---
+title: Tingkat Kelas
+description: Kelola tingkat kelas akademik dalam kurikulum sekolah
+icon: Layers
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Steps, Step } from 'fumadocs-ui/components/steps';
+
+**Tingkat Kelas** mendefinisikan struktur jenjang akademik di sekolah (misalnya Kelas X, XI, XII untuk SMA/SMK). Ini merupakan prasyarat untuk membuat Kelas dan mengelola data akademik siswa.
+
+## Ringkasan
+
+| Item | Keterangan |
+|------|------------|
+| **Tujuan** | Mendefinisikan tingkat/jenjang kelas akademik |
+| **Izin yang Diperlukan** | `grade-level-create` |
+| **Rute** | `/grade-level` |
+
+---
+
+## Menambahkan Tingkat Kelas
+
+<Steps>
+  <Step>
+    Buka **Kurikulum → Akademik → Tingkat Kelas**
+  </Step>
+  <Step>
+    Klik **Tambah Tingkat Kelas**
+  </Step>
+  <Step>
+    Masukkan **Nama Tingkat Kelas** (contoh: "Kelas X", "XI", "Kelas 3")
+  </Step>
+  <Step>
+    Klik **Simpan** untuk membuat tingkat kelas
+  </Step>
+</Steps>
+
+---
+
+## Mengedit & Menghapus Tingkat Kelas
+
+<Callout type="warning">
+  Menghapus tingkat kelas akan mempengaruhi semua kelas yang terhubung. Pastikan tidak ada kelas aktif yang menggunakan tingkat kelas tersebut sebelum menghapus.
+</Callout>
+
+- **Edit**: Klik ikon pensil di samping nama tingkat kelas untuk memperbaruinya
+- **Hapus**: Klik ikon hapus, kemudian konfirmasi tindakan
+
+---
+
+## Praktik Terbaik
+
+- Buat semua tingkat kelas sebelum membuat kelas
+- Gunakan konvensi penamaan yang konsisten (misalnya "Kelas X" atau "Tingkat 10")
+- Untuk SMK, biasanya menggunakan "Kelas X", "Kelas XI", "Kelas XII"
